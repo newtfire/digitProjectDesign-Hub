@@ -1,0 +1,20 @@
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+start = root
+root = element apollo13 {doc, head, body}
+doc = element doc {source, type, empty}
+source = attribute source {text}
+type= attribute type {text}
+
+head = element head {crew, groundControl}
+crew = element crew {person+}
+groundControl = element groundControl {person+}
+person = element person {text}
+
+body = element body {transmission+}
+transmission = element transmission {MET, com, mixed{ (MCandW | panel )* }}
+MET = attribute MET {text}
+com = attribute com {text}
+MCandW = element MCandW {text}
+panel = element panel {text}
+
+

@@ -1,0 +1,26 @@
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+
+start = root
+root = element root {info, recipe, inst}
+
+info = element info {(header | description | diff | prep | cook | serv)+}
+recipe = element recipe {header, ingre+}
+inst = element inst {(header | part | cook | ingre | alt)+}
+
+header = element header {type, text}
+description = element description {type, text}
+diff = element diff {type, text}
+prep = element prep {type, value, step, text}
+cook = element cook {type, value, step, use?, text}
+serv = element serv {type, value, text}
+ingre = element ingre {amount, measurement, piece, step?, use?, text}
+part = element part {step, mixed{ingre*}}
+
+type = attribute type {text}
+value = attribute value {xsd:integer}
+step = attribute step {text}
+amount = attribute amount {xsd:float}
+measurement = attribute measurement {text}
+piece = attribute piece {text}
+use = attribute use {"optional"}
+alt = element alt {mixed{(ingre | cook)*}}

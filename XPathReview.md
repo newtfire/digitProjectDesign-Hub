@@ -1,6 +1,7 @@
 # Top things we need to do with XPath
 
 ## Consult resources: 
+* [eXist-dB on newtfire](http://exist.newtfire.org)
 * [Newtfire XPath Tutorial](https://newtfire.org/courses/tutorials/explainXPath.html)
 * [Obdurodon: XPath Functions we use the most](http://dh.obdurodon.org/functions.xhtml)
 

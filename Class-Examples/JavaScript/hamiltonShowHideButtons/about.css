@@ -1,0 +1,172 @@
+/* CSS to accompany the JavaScript for the Hamilton About page. Look for the display property on div.main below on line 106. */
+html{
+   margin: 0px;
+    padding: 0px;
+    background-image:url("back2.jpg");
+    background-repeat: repeat;
+    background-size: 100%;
+    }
+    
+body{
+    font-family: georgia, serif;
+    color: black;
+    width:100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*Menu at top of every page*/
+
+h1{
+    font-size: 70px;
+    text-align: center;
+    font-family: "Courier New";
+    color:black;
+}
+
+div.topnav{
+    font-size: 20px;
+    font-family: "Courier New";
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+img.CCL{
+    width: 55px;
+    height: 15px;
+}
+
+hr {
+    border-color: black;
+    border-width: 10px;
+    border-style: solid;
+}
+
+.topnav{
+    overflow: hidden;
+    background-color: black;
+}
+
+.topnav a{
+    float: none;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.topnav a:hover{
+    background-color: #705410;
+    color: black;
+}
+
+.topnav a.active{
+    background-color: #f2dca6;
+    color: black;
+}
+
+/*LINKS*/
+a{
+    color: black;
+}
+
+/* mouse over link */
+a:hover{
+    color: #705410;
+}
+/* selected link */
+a:active{
+    color: white;
+}
+h2{
+    font-size: 25px;
+    text-align: center;
+}
+
+
+div.main{
+    font-family: georgia, serif;
+    color: black;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    float: left;
+    background: #f2dca6;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+    display:none;
+    /* ebb: Setting display:none; makes this entire div not seem to be there when we first load the About.html webpage.
+     * Literally, display:none collapses all the space this block element would normally take up.
+     * In JavaScript, we right a function that changes the display property to block instead when someone clicks one of the buttons on the page.
+     * For this project it is div elements nested inside div.main that we're toggling to display block. 
+     * CSS applies "inheritance" to child and descendant elements, so any div elements inside div.main will be display:none by default.
+     */
+}
+
+
+div.about{
+    font-family: georgia, serif;
+    color: black;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top:1%;
+    padding-bottom: 1%;
+}
+
+p.about{
+    text-indent:20px;
+    font-size:15px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+h3{
+    text-indent:10px;
+    font-size:18px;
+}
+
+button{
+border: solid;
+border-radius: 12px;
+border-color:black;
+border-width:2px;
+cursor: pointer;
+font-size: 16px;
+padding:10px;
+margin-top:10px;
+margin-bottom:10px;
+margin-left:10%;
+margin-right:10%;
+width:80%;
+background:#f2dca6;
+font-family: "Courier New";
+text-transform: uppercase;
+font-size:18px;
+letter-spacing: 1.5px;
+}
+
+div.buttons{
+    margin-top: 10px;
+    margin-bottom:20px;
+}
+
+a.about{
+    color:black;
+}
+    
+ul.about{
+   text-indent:20px;
+    font-size:15px;
+    letter-spacing: 1px;
+    line-height: 1.5; 
+}
+    

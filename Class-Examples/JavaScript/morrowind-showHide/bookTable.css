@@ -1,0 +1,12 @@
+section.data {display:none;}
+
+
+table, th, td {
+    border-collapse: collapse;
+    border: 3px solid #000000;
+    border-width: thick;
+    border-style: solid;   
+    padding: 15px;
+    vertical-align: top;
+    background-color:#e6fff2;
+    }

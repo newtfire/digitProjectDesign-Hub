@@ -1,0 +1,3480 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Table of Behrend Trees</title>
+        <link rel="stylesheet" type="text/css" href="treeBookScroll.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+        <script src="scrollevent.js">/**/</script>
+    </head>
+    <body>
+        <button id="scrollToTop">
+            <i class="material-icons">arrow_upward</i>
+        </button>
+        <h1>Meet the Trees</h1><!--ebb: Trying this as a set of tables with headings on the left: 
+   Also: setting a dropdown list of trees to select from.
+   -->
+       <section id="selection"><label for="commonChoice">Choose the common name of a tree: </label>
+        <input id="commonChoice" list="common-names"/>
+        <datalist id="common-names">
+            <option id="c_tree-1" value="Scarlet Oak"/>
+            <option id="c_tree-2" value="Flowering Dogwood"/>
+            <option id="c_tree-3" value="Common Bald Cypress"/>
+            <option id="c_tree-4" value="Persian Ironwood"/>
+            <option id="c_tree-5" value="Norway Maple"/>
+            <option id="c_tree-6" value="Eastern Hophornbeam"/>
+            <option id="c_tree-7" value="Kentucky Coffee Tree"/>
+            <option id="c_tree-8" value="Flowering Dogwood 2"/>
+            <option id="c_tree-9" value="Red Maple"/>
+            <option id="c_tree-10" value="Accolade Elm"/>
+            <option id="c_tree-11" value="Purple Fountain Weeping Beech"/>
+            <option id="c_tree-12" value="Eastern Hemlock"/>
+            <option id="c_tree-13" value="Kousa Dogwood"/>
+            <option id="c_tree-14" value="Blue Spruce 2"/>
+            <option id="c_tree-16" value="Fraser Fir"/>
+            <option id="c_tree-17" value="White Fringe "/>
+            <option id="c_tree-18" value="White Pine"/>
+            <option id="c_tree-19" value="Norway Spruce"/>
+            <option id="c_tree-20" value="Lost Franklinia"/>
+            <option id="c_tree-21" value="Hackberry"/>
+            <option id="c_tree-22" value="Dawn Redwood"/>
+            <option id="c_tree-23" value="Bald Cypress"/>
+            <option id="c_tree-24" value="American Chestnut"/>
+            <option id="c_tree-25" value="Persimmon"/>
+            <option id="c_tree-26" value="Ginkgo"/>
+            <option id="c_tree-27" value=" Black Gum"/>
+            <option id="c_tree-28" value="Pecan"/>
+            <option id="c_tree-29" value="Nanking (Manchu) Cherry"/>
+            <option id="c_tree-30" value="Norway Maple 2"/>
+            <option id="c_tree-31" value="Northern Red Oak"/>
+            <option id="c_tree-32" value="River's Purple Beech"/>
+            <option id="c_tree-33" value="Wildfire Black Gum "/>
+            <option id="c_tree-34" value="Bur Oak"/>
+            <option id="c_tree-35" value="American Sweetgum"/>
+            <option id="c_tree-36" value="Japanese Stewartia"/>
+            <option id="c_tree-37" value="Loblolly Pine"/>
+            <option id="c_tree-38" value="Prairiefire Flowering Crabapple"/>
+            <option id="c_tree-39" value="Black Walnut"/>
+            <option id="c_tree-40" value="Snowdrift Crabapple"/>
+            <option id="c_tree-41" value="Yellow Buckeye"/>
+            <option id="c_tree-42" value="Flowering Dogwood 3"/>
+            <option id="c_tree-45" value="Eastern Redbud"/>
+            <option id="c_tree-46" value="Pin Oak "/>
+            <option id="c_tree-47" value="Copper Beech"/>
+            <option id="c_tree-48" value="American Holly"/>
+            <option id="c_tree-49" value="Sourwood"/>
+            <option id="c_tree-50" value="Littleleaf Linden"/>
+            <option id="c_tree-51" value="Sugar Maple"/>
+            <option id="c_tree-52" value="English Oak"/>
+            <option id="c_tree-54" value="Western Tamarack (Larch)"/>
+            <option id="c_tree-55" value="Chestnut Oak"/>
+            <option id="c_tree-56" value="Tulip Tree"/>
+            <option id="c_tree-57" value="Plains Cottonwood"/>
+            <option id="c_tree-58" value="Douglas Fir"/>
+            <option id="c_tree-60" value="Thornless Honeylocust"/>
+            <option id="c_tree-61" value="Bitternut Hickory"/>
+            <option id="c_tree-62" value="American Elm"/>
+            <option id="c_tree-63" value="Atlantic White Cedar"/>
+            <option id="c_tree-64" value="American Elm 2"/>
+            <option id="c_tree-65" value="Weeping Japanese Cherry"/>
+            <option id="c_tree-66" value="American Sweetgum 2"/>
+            <option id="c_tree-67" value="Blue Spruce"/>
+            <option id="c_tree-68" value="Japanese Red Maple"/>
+            <option id="c_tree-69" value="Kwanzan Cherry"/>
+            <option id="c_tree-70" value="Yellowwood"/>
+            <option id="c_tree-71" value="Ruby Horse Chestnut"/>
+            <option id="c_tree-72" value="Japanese Umbrella Pine"/>
+            <option id="c_tree-73" value="Weeping White Pine"/>
+            <option id="c_tree-74" value="Spanish Oak"/>
+            <option id="c_tree-75" value="Osage Orange"/>
+            <option id="c_tree-76" value="Korean Pine"/>
+            <option id="c_tree-77" value="Blue Atlas Cedar"/>
+            <option id="c_tree-78" value="Paper Birch"/>
+            <option id="c_tree-79" value="White Spire Birch"/>
+            <option id="c_tree-80" value="Winter King Hawthorn"/>
+        </datalist>
+           <span>&#127795;<!--unicode deciduous tree -->&#127794;<!--unicode evergreen tree -->
+               
+           </span>
+        <label for="scientChoice">Choose the scientific name of a tree: </label>
+        <input id="scientChoice" list="scientific-names"/>
+        <datalist id="scientific-names">
+            <option id="s_tree-1" value="Quercus coccinea"/>
+            <option id="s_tree-2" value="Cornus florida"/>
+            <option id="s_tree-3" value="Taxodium distichum"/>
+            <option id="s_tree-4" value="Parrotia persica"/>
+            <option id="s_tree-5" value="Acer plataNides"/>
+            <option id="s_tree-6" value="Ostrya virginiana"/>
+            <option id="s_tree-7" value="Gymnocladus dioicus"/>
+            <option id="s_tree-8" value="Cornus florida"/>
+            <option id="s_tree-9" value="Acer rubrum"/>
+            <option id="s_tree-10" value="U. davidiana var. japonica"/>
+            <option id="s_tree-11" value="Fagus sylvatica"/>
+            <option id="s_tree-12" value="Tsuga canadensis"/>
+            <option id="s_tree-13" value="Cornus kousa "/>
+            <option id="s_tree-14" value="Picea pungens"/>
+            <option id="s_tree-16" value="Abies fraseri"/>
+            <option id="s_tree-17" value="Chionanthus virginicus"/>
+            <option id="s_tree-18" value="Pinus strobus"/>
+            <option id="s_tree-19" value="Picea abies"/>
+            <option id="s_tree-20" value="Franklinia alatamaha"/>
+            <option id="s_tree-21" value="Celtis occidentalis"/>
+            <option id="s_tree-22" value="Metasequoia"/>
+            <option id="s_tree-23" value="Taxodium distichum"/>
+            <option id="s_tree-24" value="Fagaceae"/>
+            <option id="s_tree-25" value="Diospyros kaki"/>
+            <option id="s_tree-26" value="Ginkgo biloba"/>
+            <option id="s_tree-27" value="Nyssa sylvatica"/>
+            <option id="s_tree-28" value="Carya illiNinensis"/>
+            <option id="s_tree-29" value="Prunus tomentosa"/>
+            <option id="s_tree-30" value="Acer platanoides"/>
+            <option id="s_tree-31" value="Quercus rubra"/>
+            <option id="s_tree-32" value="Fagus sylvatica ÔRiversiiÕ "/>
+            <option id="s_tree-33" value="Nyssa sylvatica 'Wildfire'"/>
+            <option id="s_tree-34" value="Quercus macrocarpa"/>
+            <option id="s_tree-35" value="Liquidambar styraciflua"/>
+            <option id="s_tree-36" value="Stewartia pseudocamellia"/>
+            <option id="s_tree-37" value="Pinus taeda"/>
+            <option id="s_tree-38" value="Malus 'Prairifire'"/>
+            <option id="s_tree-39" value="Juglans nigra"/>
+            <option id="s_tree-40" value="Malus 'Snowdrift'"/>
+            <option id="s_tree-41" value="Aesculus flava"/>
+            <option id="s_tree-42" value="Cornus florida"/>
+            <option id="s_tree-45" value="Cercis canadensis"/>
+            <option id="s_tree-46" value="Quercus palustris"/>
+            <option id="s_tree-47" value="Fagus sylvatica"/>
+            <option id="s_tree-48" value="Ilex opaca"/>
+            <option id="s_tree-49" value="Oxydendrum arboreum"/>
+            <option id="s_tree-50" value="Tilia cordata"/>
+            <option id="s_tree-51" value="Acer saccharum"/>
+            <option id="s_tree-52" value="Quercus robur"/>
+            <option id="s_tree-54" value="Larix occidentalis"/>
+            <option id="s_tree-55" value="Quercus prinus"/>
+            <option id="s_tree-56" value="Liriodendron tulipifera"/>
+            <option id="s_tree-57" value="Populus deltoides"/>
+            <option id="s_tree-58" value="Pseudotsuga menziesii"/>
+            <option id="s_tree-60" value="Gleditsia triacanthos"/>
+            <option id="s_tree-61" value="Carya cordiformis"/>
+            <option id="s_tree-62" value="Ulmus americana"/>
+            <option id="s_tree-63" value="Thuja occidentalis"/>
+            <option id="s_tree-64" value="Ulmus americana"/>
+            <option id="s_tree-65" value="Prunus subhirtella"/>
+            <option id="s_tree-66" value="Liquidambar styraciflua"/>
+            <option id="s_tree-67" value="Picea pugenus"/>
+            <option id="s_tree-68" value="Aceraceae"/>
+            <option id="s_tree-69" value="Cultivar"/>
+            <option id="s_tree-70" value="Cladrastis kentukea"/>
+            <option id="s_tree-71" value="Aesculus carnea"/>
+            <option id="s_tree-72" value="Sciadopitys verticillata"/>
+            <option id="s_tree-73" value="Pinus strobus 'Pendula"/>
+            <option id="s_tree-74" value="Quercus falcata"/>
+            <option id="s_tree-75" value="Maclura pomifera"/>
+            <option id="s_tree-76" value="Pinus koraiensis"/>
+            <option id="s_tree-77" value="Cedrus atlantica"/>
+            <option id="s_tree-78" value="Betula papyrifera"/>
+            <option id="s_tree-79" value="Betula populifolia"/>
+            <option id="s_tree-80" value="Crataegus viridis"/>
+        </datalist></section>
+        <table id="tree-1">
+            <tr>
+                <th>Common Name</th>
+                <td>Scarlet Oak</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Quercus coccinea</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>The Scarlet Oak is a large tree with rounded, open crown, and an autumn color. carlet oak is a 75 ft., deciduous tree, occasionally reaching heights of 150 ft. A somewhat pyramidal crown develops from stout, ascending branches. Bark brown with fine fissures and scaly ridges, inner bark is red to orangish-pink. Twigs are smooth reddish-brown; clustered terminal buds are ovoid and reddish-brown with pubescence near the apex, 5-angled in cross section. Leaves smooth petiole 3/4 - 2 3/8 inches (19 - 60 mm) in length; leaves are elliptic to obovate, 2 3/4 - 6 1/4 inches (70 - 159 mm) long, 3 - 5 1/8 inches (76 - 130 mm) wide, margins with 5 - 9 lobes extending more than 1/2 the distance to the midrib, base truncate, apex acute; upper surface a glossy light green, with tufts of axillary tomentum beneath, secondary veins raised on both surfaces. Leaves turn rich, scarlet-red in the fall. Catkins appear just before or with the appearance of new leaves. A popular and handsome shade and street tree. The lumber is marketed as Red Oak, which differs in its shallowly lobed, dull green leaves, and acorns with a shallow cup. Black Oak (Quercus velutina) is also similar, but has yellow-green leaves with brown hairs beneath and acorns with a deep cup of loose hairy scales. This species is very susceptible to fire damage because of its thin bark. Such injuries often result in heart rot. Grows rapidly and begins to bear fruit at age 20.</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-2">
+            <tr>
+                <th>Common Name</th>
+                <td>Flowering Dogwood</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Cornus florida</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>The Flowering Dogwood is a single or multi-trunked tree with a spreading crown and long lasting, white and pink spring blooms. It is a small flowering tree with a short trunk and drown of spreading or horizontal branches. The tree hosts red fruits and other scarlet red fall foliage. The Flowering Dogwood is known as one of the most beautiful North American trees with beautiful early spring flowers and red fruit. Its hard wood is extremely shock-resistant and useful for making woven items. It is also made into spools, small pulleys, mallet heads, and jeweler's blocks. Indians used the aromatic bark and roots as a remedy for malaria and extracted a red dye from the roots.</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-3">
+            <tr>
+                <th>Common Name</th>
+                <td>Common Bald Cypress</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Taxodium distichum</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>The baldcypress tree is the classic tree of southern swamps. There, in its native habitat, it displays a peculiar habit of raising conical "knees" from its roots. The function of these growths is something of a mystery, although some believe it is a way to help the roots get oxygen. This tree dwells in swamps because it out-competes most other trees on such sites. To the surprise of many, the baldcypress does quite well when planted in the right soil in yards or along streets and is a beautiful specimen tree. It has been grown successfully in cities as far north as Milwaukee and on dry Texas hills.</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-4">
+            <tr>
+                <th>Common Name</th>
+                <td>Persian Ironwood</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Parrotia persica</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This tree is a small upright tree or large, rounded, multi-stemmed shrub. The oblong green leaves turn various shades of red, orange and yellow in the fall, often persisting into the winter months. "</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-5">
+            <tr>
+                <th>Common Name</th>
+                <td>Norway Maple</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Acer plataNides</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>Norway maple (Acer platanoides) is a large deciduous tree that can grow up to approximately 40-60 feet in height. They are tolerant of many different growing environments and have been a popular tree to plant on lawns and along streets because of their hardiness. Norway maples have very shallow roots and produce a great deal of shade which makes it difficult for grass and other plants to grow in the understory below. Additionally, they are prolific seed producers and are now invading forests and forest edges.</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-6">
+            <tr>
+                <th>Common Name</th>
+                <td>Eastern Hophornbeam</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Ostrya virginiana</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This tree grows 20 to 35 ft tall and is naturally found in dry, rocky forests. The leaves are alternate with a doubly toothed margin and fuzzy stem. The bark is smooth and reddish brown."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-7">
+            <tr>
+                <th>Common Name</th>
+                <td>Kentucky Coffee Tree</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Gymnocladus dioicus</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>The Kentucky Coffee Tree grows to a height of 60Ð75' and produces clusters of greenish-white flowers that bloom at the same time leaves are maturing.</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-8">
+            <tr>
+                <th>Common Name</th>
+                <td>Flowering Dogwood 2</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Cornus florida</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This is a multi-branched shrub or small tree, characterized by a rounded crown and horizontal branches that spread wider than its height. Typically ranges 15' to 50' tall. Bark on mature trees is broken into small square blocks that give the stem an ÒalligatorÓ appearance."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-9">
+            <tr>
+                <th>Common Name</th>
+                <td>Red Maple</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Acer rubrum</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"Red maples are fast-growing trees that usually reach 60-90'. Flowers, fruit, twigs and autumn leaves are red"</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-10">
+            <tr>
+                <th>Common Name</th>
+                <td>Accolade Elm</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>U. davidiana var. japonica</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>" This elm is a vase shaped tree that typically grows to 50-60' tall and 25-40' wide. Glossy, ovate-elliptic, dark green leaves have toothed margins and asymetrical bases."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-11">
+            <tr>
+                <th>Common Name</th>
+                <td>Purple Fountain Weeping Beech</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Fagus sylvatica</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This dark-leaved tree has bronze-purple, wavy margined leaves and cascading branches. Fall color is yellow, then orange-brown. Grows 15 to 30'."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-12">
+            <tr>
+                <th>Common Name</th>
+                <td>Eastern Hemlock</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Tsuga canadensis</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>coniferous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This tree is one of the more shade-tolerant evergreens that resembles a large Christmas tree with its broadly pyramidal, pendulous branches and fine, dark-green needles on widely spaced branches. The tree has abundant brown cones that hang from branches."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-13">
+            <tr>
+                <th>Common Name</th>
+                <td>Kousa Dogwood</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Cornus kousa</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This is a flowering tree or multi-stemmed shrub that typically grows 15-30' tall, with a vase-shaped habit in the early years but eventually maturing to a more rounded form. Bloom occurs in late spring."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-14">
+            <tr>
+                <th>Common Name</th>
+                <td>Blue Spruce 2</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Picea pungens</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>coniferous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This is an anconical-shaped evergreen tree with stiff horizontal branches and short stiff needles. In nature, the needles are often green, but many specimens produce blue-green needles."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-16">
+            <tr>
+                <th>Common Name</th>
+                <td>Fraser Fir</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Abies fraseri</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>coniferous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>This is a uniformly pyramid-shaped tree which reaches a maximum height of about 80'. Strong branches are turned slightly upward which gives the tree a compact appearance.</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-17">
+            <tr>
+                <th>Common Name</th>
+                <td>White Fringe </td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Chionanthus virginicus</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>" This tree is characterized by its resplendent white flowers, which bloom in May or June. The tree also has small olive-like fruit, which develops in August or September."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-18">
+            <tr>
+                <th>Common Name</th>
+                <td>White Pine</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Pinus strobus</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>coniferous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This tree can reach 150' in height and up to 40"" in diameter. Its evergreen needles are in clusters of 5, soft, flexible, 2 1/2 to 5 inches long, and bluish-green in appearance."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-19">
+            <tr>
+                <th>Common Name</th>
+                <td>Norway Spruce</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Picea abies</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>coniferous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This is a large, pyramidal tree with long, cylindrical cones that hang like ornaments against the dark green foliage. Tends to be 50'-80' high "</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-20">
+            <tr>
+                <th>Common Name</th>
+                <td>Lost Franklinia</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Franklinia alatamaha</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This is a small tree or large shrub growing 15- 20' high and 10-15' feet wide. It has elongated, dark green leaves that turn red, orange, or pink in the fall."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-21">
+            <tr>
+                <th>Common Name</th>
+                <td>Hackberry</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Celtis occidentalis</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This tree typically grows 40-60' tall with upright-arching branching and a rounded spreading crown. Fruit is like a hybrid between a nut and a berry. They are a versatile, power packed food. In general, they are sweet, tasty, and crunchy."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-22">
+            <tr>
+                <th>Common Name</th>
+                <td>Dawn Redwood</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Metasequoia</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This tree producies small, round 1/2"" to 1"" cones. It has a pyramidal shape in youth, maturing into a more rounded crown. The bright green, feathery leaves turn orange-brown or reddish-brown in the fall"</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-23">
+            <tr>
+                <th>Common Name</th>
+                <td>Bald Cypress</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Taxodium distichum</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"A young bald cypress is symmetrical and pyramidal. As it matures, it develops a coarse wide-spreading head. Its tapering trunk is usually 100' tall. They shed their needlelike leaves in the fall. Their fall colors are tan, brown, and fiery orange."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-24">
+            <tr>
+                <th>Common Name</th>
+                <td>American Chestnut</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Fagaceae</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>This tree has long cane shaped leaves with hooked teeth at the edge of the leaf. The leaf is dull/ matte in texture. The tree reaches a height of 50'- 75'</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-25">
+            <tr>
+                <th>Common Name</th>
+                <td>Persimmon</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Diospyros kaki</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"A small tree, growing up to 33' in height. The fruit is 1Ð2"" in diameter, usually rather flattened, and dark red to maroon in colour."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-26">
+            <tr>
+                <th>Common Name</th>
+                <td>Ginkgo</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Ginkgo biloba</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>" This tree has somewhat leathery, fan-shaped, rich green leaves. Leaves turn bright yellow in fall. Tree grows 50'- 80' tall"</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-27">
+            <tr>
+                <th>Common Name</th>
+                <td> Black Gum</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Nyssa sylvatica</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This tree has summer leaves that are dark green with a high-gloss appearance, but the fall foliage turns many shades of yellow, orange, bright red, purple or scarlet that may appear on the same branch. Bark matures to medium gray and resembles alligator hide. Grows 30'-50' high."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-28">
+            <tr>
+                <th>Common Name</th>
+                <td>Pecan</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Carya illiNinensis</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>This tree has a thick gray-brown trunk. The bark is ridged and has a scaly appearance. The twigs of the tree are red-brown in color and the foliage is dark green.</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-29">
+            <tr>
+                <th>Common Name</th>
+                <td>Nanking (Manchu) Cherry</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Prunus tomentosa</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This tree has fragrant white spring flowers, shiny reddish-brown bark, and edible scarlet fruit. It typically grows to a height of 6Ð10' and a spread about 15' at maturity."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-30">
+            <tr>
+                <th>Common Name</th>
+                <td>Norway Maple 2</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Acer platanoides</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>" This tree reaches a height of 40'-50'. The leaves are dark green, simple, opposite, 4Ó-7Ó wide with 5 lobes. The mature tree has a rounded crown of dense foliage and the bark is grayish-black and furrowed."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-31">
+            <tr>
+                <th>Common Name</th>
+                <td>Northern Red Oak</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Quercus rubra</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>" Mature trees have dark grey or brown bark with broad, shiny strips on the trunk's ridges. Its leaves are dark green on both sides, with seven to eleven sharp lobes. "</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-32">
+            <tr>
+                <th>Common Name</th>
+                <td>River's Purple Beech</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Fagus sylvatica ÔRiversiiÕ</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>This tree has the deepest purple foliage of any purple-leafed beech with richly colored foliage that retains its dark purple color throughout the summer months.ÊIt grows 40'-50'.</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-33">
+            <tr>
+                <th>Common Name</th>
+                <td>Wildfire Black Gum </td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Nyssa sylvatica 'Wildfire'</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>Wildfire Black Gum has forest green foliage which emerges red in spring. The glossy pointy leaves turn an outstanding crimson in the fall. Tree reaches a height of 50'.</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-34">
+            <tr>
+                <th>Common Name</th>
+                <td>Bur Oak</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Quercus macrocarpa</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"Bur Oak is a large, deciduous tree with a very wide, open crown. Usually wider than tall, the tree can exceed 100' in height and width. The massive trunk supports heavy, horizontal limbs and rough, deep-ridged bark."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-35">
+            <tr>
+                <th>Common Name</th>
+                <td>American Sweetgum</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Liquidambar styraciflua</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This tree provides brilliant fall color, with leaves turning vibrant shades of yellow, orange, red and purple. Yields long-stemmed, woody, burr-like fruit that is approximately 1?"" in diameter. Grows in a pyramidal shape, becoming more oval or rounded with age."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-36">
+            <tr>
+                <th>Common Name</th>
+                <td>Japanese Stewartia</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Stewartia pseudocamellia</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This tree is a small, slow-growing, pyramidal, deciduous tree native to the mountains of Japan and the Korean peninsula. Specimens in the wild can reach 50-60' tall, but in cultivation typically mature over time to 20-40' tall."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-37">
+            <tr>
+                <th>Common Name</th>
+                <td>Loblolly Pine</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Pinus taeda</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>coniferous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This tree is a large evergreen tree that reaches heights of 130'. It has ascending limbs, and a rounded, spreading crown. "</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-38">
+            <tr>
+                <th>Common Name</th>
+                <td>Prairiefire Flowering Crabapple</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Malus 'Prairifire'</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This tree grows 15- 20 ft. The blooms are followed by an intense maroon foliage that matures to a reddish green then turns red, orange, and purple in the fall. The glossy, persistent red fruit are an excellent food source for birds "</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-39">
+            <tr>
+                <th>Common Name</th>
+                <td>Black Walnut</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Juglans nigra</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This tree grows 70-80' in height and attain diameters of 2 to 4'. Mature trees have a deeply furrowed gray- brown to nearly black bark. The brown to orange- brown twigs are stout, with large, shield shaped, conspicuous leaf scars"</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-40">
+            <tr>
+                <th>Common Name</th>
+                <td>Snowdrift Crabapple</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Malus 'Snowdrift'</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This tree is a rounded, deciduous tree which typically grows 15-20' tall with a similar spread. Red buds open to slightly fragrant, single white flowers in spring. Flowers are followed by masses of small, orange-red crabapples"</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-41">
+            <tr>
+                <th>Common Name</th>
+                <td>Yellow Buckeye</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Aesculus flava</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"The Yellow Buckeye has thick bark, yellow spring blooms, and striking orange fall color. It grows 60-75' tall. This tree actually gets its name from the whitish scar found on each brown seed. It is said to give the seed the appearance of a deer's eye."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-42">
+            <tr>
+                <th>Common Name</th>
+                <td>Flowering Dogwood 3</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Cornus florida</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This is a multi-branched shrub or small tree, characterized by a rounded crown and horizontal branches that spread wider than its height. Typically ranges 15'-50' tall. Bark on mature trees is broken into small square blocks that give the stem an ÒalligatorÓ appearance."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-45">
+            <tr>
+                <th>Common Name</th>
+                <td>Eastern Redbud</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Cercis canadensis</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"Trees typically grow 20' in height with a similar spread and have ascending branches and a rounded shape. Leaves are alternate, simple, broadly heart-shaped and 3 to 5"" high and wide. Leaves emerge reddish, turning green as they expand."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-46">
+            <tr>
+                <th>Common Name</th>
+                <td>Pin Oak </td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Quercus palustris</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This tree features glossy, dark green leaves that are 3Ð6"" long with 5 lobes. Yields acorns that are nearly round and ?"" long . It grows 70'-90' tall with diameters between 2' and 3'."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-47">
+            <tr>
+                <th>Common Name</th>
+                <td>Copper Beech</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Fagus sylvatica</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This tree takes on a dense, oval to pyramidal shape. Generally grows to heights of 50 to 75' with a width of 40 to 60'."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-48">
+            <tr>
+                <th>Common Name</th>
+                <td>American Holly</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Ilex opaca</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This tree features leathery leaves that are 2Ð4"" long, maintain their green color year-round, and are sharply tipped on the margins. Yields red, berry-like fruit. Average of 50' tall"</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-49">
+            <tr>
+                <th>Common Name</th>
+                <td>Sourwood</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Oxydendrum arboreum</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>This tree has a rounded top and drooping branches. Tree typically grow up to 30' in height and 20' in spread.</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-50">
+            <tr>
+                <th>Common Name</th>
+                <td>Littleleaf Linden</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Tilia cordata</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This tree features heart-shaped leaves that are lopsided at the base, usually 2Ð3"" long. Leaf color shifts from light green to glossy dark green to yellow throughout the seasons. Yields nutlike fruit."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-51">
+            <tr>
+                <th>Common Name</th>
+                <td>Sugar Maple</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Acer saccharum</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This tree has medium to dark-green leaves that turn yellow, burnt orange, and red in the fall. This tree grows 60' to 75' and spreads 40' to 50'."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-52">
+            <tr>
+                <th>Common Name</th>
+                <td>English Oak</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Quercus robur</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>This tree has broad leaves and are considered one of the best shade trees. They produce fruit in the form of acorns. They reach a mature height of 50 to 70'.</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-54">
+            <tr>
+                <th>Common Name</th>
+                <td>Western Tamarack (Larch)</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Larix occidentalis</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This tree is tall with trunks that grow very straight. Average height is 100'. The bark of young trees is gray and smooth, becoming reddish brown and scaly with age."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-55">
+            <tr>
+                <th>Common Name</th>
+                <td>Chestnut Oak</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Quercus prinus</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This tree is readily identified by its massively-ridged dark gray-brown bark. It grows 50 to 60' tall. The leaves are 4 to 6"" long. Fall color varies from red to orange to yellow-brown."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-56">
+            <tr>
+                <th>Common Name</th>
+                <td>Tulip Tree</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Liriodendron tulipifera</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This tree typically grows 60-90' tall. The bark on its large trunk is colored light grayish brown. The leaves are 3-8"" long and are glossy green above with a pale green underside, changing to golden yellow in the fall."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-57">
+            <tr>
+                <th>Common Name</th>
+                <td>Plains Cottonwood</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Populus deltoides</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>This tree may range from 70-130' in height and 4-7' in diameter. The leaves are sail-like shaped with long flat stems they have a tendency to tremble and flutter from even the slightest breeze</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-58">
+            <tr>
+                <th>Common Name</th>
+                <td>Douglas Fir</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Pseudotsuga menziesii</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>coniferous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>" This tree has long, flat, spirally arranged needles that grow directly from the branch and completely surround it. These trees can grow up to 250' in height and 6' in diameter. "</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-60">
+            <tr>
+                <th>Common Name</th>
+                <td>Thornless Honeylocust</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Gleditsia triacanthos</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This is a fast-growing tree with fragrant spring flowers. Its delicate, open silhouette lets grass grow underneath. Tiny leaflets turn yellow or yellow-green in fall. Grows to 30' to 70'."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-61">
+            <tr>
+                <th>Common Name</th>
+                <td>Bitternut Hickory</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Carya cordiformis</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This tree has leaves that are 15"" long that turn bright yellow to brown in the fall. It grows about 160' in height. Nuts found on the tree have a bitter taste and are about an inch in length"</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-62">
+            <tr>
+                <th>Common Name</th>
+                <td>American Elm</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Ulmus americana</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"The leaves of American Elm are alternate, simple, and have doubly toothed margins. They are oval to elliptic and are 4 to 6 inches long. The tree grows 60 to 80'."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-63">
+            <tr>
+                <th>Common Name</th>
+                <td>Atlantic White Cedar</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Thuja occidentalis</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>coniferous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This tree has bark that is pale brown, stringy and fibrous in appearance, sometimes shredding. It has fan-like branches and scaly leaves. This tree grows about 50' tall"</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-64">
+            <tr>
+                <th>Common Name</th>
+                <td>American Elm 2</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Ulmus americana</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>Elm trees have oval-shaped leaves with saw-toothed edges and are pointy at the end. The tree can grow up to 80'.</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-65">
+            <tr>
+                <th>Common Name</th>
+                <td>Weeping Japanese Cherry</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Prunus subhirtella</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>This tree has slender and flexible branches that lead them to gracefully weep their long pink leaves. This tree grows 20 to 30' tall</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-66">
+            <tr>
+                <th>Common Name</th>
+                <td>American Sweetgum 2</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Liquidambar styraciflua</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"The fall leaves on this tree turn vibrant shades of yellow, orange, red and purple. Yields burr-like fruit that is approximately 1?"" in diameter. The tree grows 60 to 75'."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-67">
+            <tr>
+                <th>Common Name</th>
+                <td>Blue Spruce</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Picea pugenus</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>This tree is conical-shaped with stiff horizontal branches and short stiff needles. The tree grows 50-75' in height</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-68">
+            <tr>
+                <th>Common Name</th>
+                <td>Japanese Red Maple</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Aceraceae</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>This tree can be a small tree or large shrub with a broadly spreading crown. The leaves stay a vibrant red all year long. The tree grows 15 to 25' tall</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-69">
+            <tr>
+                <th>Common Name</th>
+                <td>Kwanzan Cherry</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Cultivar</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>This cherry can grow 30-40'. It has very showy pink flowers that bloom in clusters of 3-5 in April.</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-70">
+            <tr>
+                <th>Common Name</th>
+                <td>Yellowwood</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Cladrastis kentukea</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"The yellowwood grows 30-50'. It has smooth bark, large hanging clusters of fragrant white flowers, and clear yellow fall color."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-71">
+            <tr>
+                <th>Common Name</th>
+                <td>Ruby Horse Chestnut</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Aesculus carnea</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This tree is a clone of a hybrid horse chestnut, resulting from a cross between the European horse chestnut with white flowers and an eastern Nrth American native with red ones.ÊIt can grow 40-60'. It has gray-green bark and leaves which are dark green above and silvery below that turn bright yellow in fall. "</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-72">
+            <tr>
+                <th>Common Name</th>
+                <td>Japanese Umbrella Pine</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Sciadopitys verticillata</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>coniferous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>Japanese Umbrella Pine is named for its elegant shape and cascading green needles. It usually grows to 25' and is a slow grower.</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-73">
+            <tr>
+                <th>Common Name</th>
+                <td>Weeping White Pine</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Pinus strobus 'Pendula</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>coniferous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This pine only grows to about 12'. Weeping white pine trees have smooth trunks covered with silvery-gray bark. As they age, the foliage covers the trunks all the way to the ground. The needles of a weeping white pine are evergreen and smell good. They are blue or blue-green."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-74">
+            <tr>
+                <th>Common Name</th>
+                <td>Spanish Oak</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Quercus falcata</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This oak can grow to 90'. Bark is grayish-black, broken into deep grooves, becoming ridged and rough-plated near the base.. The leaves upper surface is dark green &amp; shiny while the lower surface is paler with light brown matted hairs. Leaves often droop and turn reddish-brown in fall."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-75">
+            <tr>
+                <th>Common Name</th>
+                <td>Osage Orange</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Maclura pomifera</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"The Osage Orange grows to be 30-50'. Leaf blades are dark green, smooth and waxy above; paler green with a few hairs beneath. The color turns translucent yellow in the fall. Large fruits appear on female trees. Its wood was once in demand for making hubs and wheel rims for horse drawn wagons. "</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-76">
+            <tr>
+                <th>Common Name</th>
+                <td>Korean Pine</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Pinus koraiensis</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>coniferous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"Korean pine grows to mature heights of 100'. Bark is gray-brown and smooth, becoming gray-black, scaly, and peeling on larger trees."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-77">
+            <tr>
+                <th>Common Name</th>
+                <td>Blue Atlas Cedar</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Cedrus atlantica</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>coniferous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>This cedar is slow growing; reaches 40 to 60'. The evergreen needles are a light blue gray color. The Blue Atlas Cedar is native to the Atlas Mountains.</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-78">
+            <tr>
+                <th>Common Name</th>
+                <td>Paper Birch</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Betula papyrifera</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>The Paper Birch grows to a height of 50Ð70'. It develops a smooth white bark that curls and peels. The leaves turn bright yellow in the fall</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-79">
+            <tr>
+                <th>Common Name</th>
+                <td>White Spire Birch</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Betula populifolia</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This Birch has chalky white bark. It is fast growing to a height of 20-40' . It yeild shiny, dark green leaves that turn yellow in the fall."</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+        <table id="tree-80">
+            <tr>
+                <th>Common Name</th>
+                <td>Winter King Hawthorn</td>
+            </tr>
+            <tr>
+                <th>Scientific Name</th>
+                <td>Crataegus viridis</td>
+            </tr>
+            <tr>
+                <th>Tree Type</th>
+                <td>deciduous</td>
+            </tr>
+            <tr>
+                <th>Conservation Status</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Origin Location</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Seed Type</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Leaf Description</th>
+                <td/>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>"This Hawthorn can grow 25-35'. Gray stems have glossy dark green leaves that turn purple to red in fall. Thorns can be present. Fragrant, 5-petaled, white flowers bloom in May. Flowers are followed by small red fruits that ripen in September and usually persist on the tree well into winter. The fruit is sometimes called a haw. "</td>
+            </tr>
+            <tr class="deco">
+                <td/>
+                <td>
+                    <img src="leaf_breaker.png" alt="decorative leaf"/>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

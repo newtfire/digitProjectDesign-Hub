@@ -15,7 +15,7 @@
         <h1>Meet the Trees</h1><!--ebb: Trying this as a set of tables with headings on the left: 
    Also: setting a dropdown list of trees to select from.
    -->
-        <label for="commonChoice">Choose the common name of a tree: </label>
+       <section id="selection"><label for="commonChoice">Choose the common name of a tree: </label>
         <input id="commonChoice" list="common-names"/>
         <datalist id="common-names">
             <option id="c_tree-1" value="Scarlet Oak"/>
@@ -94,6 +94,9 @@
             <option id="c_tree-79" value="White Spire Birch"/>
             <option id="c_tree-80" value="Winter King Hawthorn"/>
         </datalist>
+           <span>&#127795;<!--unicode deciduous tree -->&#127794;<!--unicode evergreen tree -->
+               
+           </span>
         <label for="scientChoice">Choose the scientific name of a tree: </label>
         <input id="scientChoice" list="scientific-names"/>
         <datalist id="scientific-names">
@@ -172,7 +175,7 @@
             <option id="s_tree-78" value="Betula papyrifera"/>
             <option id="s_tree-79" value="Betula populifolia"/>
             <option id="s_tree-80" value="Crataegus viridis"/>
-        </datalist>
+        </datalist></section>
         <table id="tree-1">
             <tr>
                 <th>Common Name</th>

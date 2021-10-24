@@ -18,6 +18,11 @@ h1 {
     color: white;
     font-family: Sans-serif;
 }
+
+section#selection {
+    padding:3em;
+}
+
  table {
             font-family: Arial, Helvetica, sans-serif;
             border-collapse: collapse;
@@ -48,7 +53,6 @@ button {
     /*text-align: left;*/
     padding: 8px;
 }
-
 
 
 img{

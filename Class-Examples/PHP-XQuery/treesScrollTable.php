@@ -20,8 +20,6 @@
     echo $result;
 ?>
        
-        
-        
-
+ 
     </body>
 </html>

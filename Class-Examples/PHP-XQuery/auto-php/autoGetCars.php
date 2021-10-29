@@ -8,11 +8,11 @@
 <body>
 <h1>Your search returned these cars</h1>
 <hr/>
-<ul>
+
 
 <!--ebb: Here we will simply pull in the year parameter from our PHP conversation -->
 <h1>Made in <?php require_once("config.php"); echo htmlspecialchars($_GET["year"])?></h2>
-
+<ul>
 <!--ebb: Now, we make a PHP call to the XQuery that populates our list of cars.  -->
 <?php
     require_once("config.php");

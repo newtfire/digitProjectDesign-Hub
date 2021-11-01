@@ -7,10 +7,10 @@
         <!--The "g" element just lets us *group* stuff together. -->
        
         
-        <circle cx="250" cy="150" r="300" stroke="red" fill="purple" stroke-width="4"/>  
+        <circle cx="250" cy="10" r="20" stroke="red" fill="purple" stroke-width="4"/>  
         <circle cx="320" cy="180" r="50" stroke="red" fill="orange" stroke-width="4"/>  
        
-        <circle cx="0" cy="0" r = "80" stroke="black" fill="#80ff80" stroke-width="15"/>
+        <circle cx="0" cy="0" r = "60" stroke="black" fill="#80ff80" stroke-width="15"/>
            <!--center circle drawn at 0, 0 -->
         
         <!--<line x1="25" y1="-5" x2="500" y2="500" stroke="red" stroke-width="3"/>-->

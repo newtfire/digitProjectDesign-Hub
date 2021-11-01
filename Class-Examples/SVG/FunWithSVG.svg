@@ -8,16 +8,16 @@
        
         
         <circle cx="250" cy="150" r="300" stroke="red" fill="purple" stroke-width="4"/>  
-        <circle cx="320" cy="180" r="50" stroke="red" fill="orange" stroke-width="4"/>  
+        <circle cx="350" cy="180" r="50" stroke="red" fill="orange" stroke-width="4"/>  
        
-        <circle cx="0" cy="0" r = "80" stroke="black" fill="#80ff80" stroke-width="15"/>
+        <circle cx="07" cy="07" r = "80" stroke="black" fill="#80ff80" stroke-width="15"/>
            <!--center circle drawn at 0, 0 -->
         
         <!--<line x1="25" y1="-5" x2="500" y2="500" stroke="red" stroke-width="3"/>-->
         
         <line x1="0" y1="300" x2="700" y2="300" stroke="black" stroke-width="5"/>
         <!--Horizontal line above. -->
-        <line x1="0" y1="300" x2="0" y2="0" stroke="black" stroke-width="30"/>
+        <line x1="0" y1="300" x2="40" y2="0" stroke="black" stroke-width="30"/>
         <!--Vertical line above. -->
         <line x1="25" y1="250" x2="700" y2="250" stroke="purple" stroke-width="2"/>
         

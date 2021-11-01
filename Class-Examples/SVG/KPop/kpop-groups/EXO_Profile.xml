@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="group_markup_Schema.rnc" type="application/relax-ng-compact-syntax"?>
+<groupPage>
+    <about>
+        <groupName xml:id="EXO">EXO (엑소)</groupName>
+        <bgInfo>
+            <p>EXO is a 9-member group under <compMent labelRef="SMEnt">SM Entertainment</compMent>. They debuted with 12 people, but 3 of the Chinese members (Kris, Tao, and Luhan) terminated their contracts with <compMent labelRef="SMEnt">SM</compMent> with a lawsuit in 2014/2015, citing mistreatment and a failure to meet their health needs. </p>
+            
+            <p>The group has a “story” attached to themselves, lore detailed across music videos, lyrics, and official statements by the <compMent labelRef="SMEnt">company</compMent>. The group is from a distant planet and has been chased across the galaxy by those who want their “powers,” unique abilities that each member possesses (<memberMent artistRef="Suho">Suho</memberMent> has a water power, <memberMent artistRef="Kai">Chanyeol</memberMent> has fire, <memberMent artistRef="Kai">Kai</memberMent> has teleportation, etc.) EXO has come to Earth to hide from their pursuers and live in peace. They’re one of the few K-Pop groups to have a full, fictional story that describes their origin/backstory.</p>
+            
+            <p>There are numerous subunits within EXO, including two that were established at release: <groupMent artistRef="EXO-K">EXO-K</groupMent> and <groupMent artistRef="EXO-K">EXO-M</groupMent>, which would perform songs in Korean and Mandarin respectively. <groupMent artistRef="EXO-CBX">EXO-CBX</groupMent> is a vocal-focused subunit that formed later in the group’s life, with <groupMent artistRef="EXO-SC">EXO-SC</groupMent> following shortly after and going for a rip/hip-hop sound.</p>
+            
+        </bgInfo>
+        <company xml:id="SMEnt">SM Entertainment</company>
+        <debutDate when="2012-04-08">April 8, 2012</debutDate>
+        <debutSong>MAMA</debutSong>
+        <discography>
+            <album albumType="full">MAMA</album>
+            <album albumType="full">XOXO</album>
+            <album albumType="mini">Miracles in December</album>
+            <album albumType="mini">Overdose</album>
+            <album albumType="live">Exology Chapter 1: The Lost Planet</album>
+            <album albumType="mini">Exodus</album>
+            <album albumType="mini">Sing for You</album>
+            <album albumType="full">Ex’Act</album>
+            <album albumType="mini">For Life</album>
+            <album albumType="full">The War</album>
+            <album albumType="mini">Universe</album>
+            <album albumType="full">Countdown</album>
+            <album albumType="full">Don’t Mess Up My Tempo</album>
+            <album albumType="repackage">Love Shot</album>
+            <album albumType="full" xml:id="Obsession-Album">Obsession</album>
+        </discography>
+        <fandomName>EXO-L</fandomName>
+        <fandomColor>
+            <color colorHex="#c9cac5">Cosmic Latte</color>
+        </fandomColor>
+        <lightstick>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/lightsticks/EXO_Lightstick.jpg?raw=true</lightstick>
+        <currentRank>4</currentRank>
+    </about> 
+    
+    <memberList>
+        
+        <member xml:id="Suho">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/EXO/Suho_Portrait.jpeg?raw=true</portrait>
+            <stageName>Suho (수호)</stageName>
+            <koreanName>Kim Jun Myeon (김준면)</koreanName>
+            <role>
+                <position num="1" roleType="leader">Leader</position>
+                <position num="2" roleType="vocalist">Lead Vocalist</position>
+                <position num="3" roleType="visual">Visual</position>
+            </role>
+            <subunit>
+                <unit unitName="EXO-K">EXO-K</unit>
+                <unit unitName="EXO-Main-Vocal">EXO Main Vocal Line</unit>
+            </subunit>
+            <height>173 cm (5’8″)</height>
+            <weight>60 kg (132 lbs)</weight>
+            <birthday when="1991-05-22">May 22, 1991</birthday>
+        </member>
+        
+        <member xml:id="Xiumin">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/EXO/Xiumin_Portrait.jpg?raw=true</portrait>
+            <stageName>Xiumin (시우민)</stageName>
+            <koreanName>Kim Min Seok (김민석)</koreanName>
+            <role>
+                <position num="1" roleType="vocalist">Sub Vocalist</position>
+                <position num="2" roleType="rapper">Sub Rapper</position>
+            </role>
+            <subunit>
+                <unit unitName="EXO-M">EXO-M</unit>
+                <unit unitName="EXO-CBX">EXO-CBX</unit>
+            </subunit>
+            <height>172 cm (5’8″)</height>
+            <weight>57 kg (125 lbs)</weight>
+            <birthday when="1990-03-26">March 26, 1990</birthday>
+            <note>Xiumin is currently doing mandatory military service and was not a part of Obsession.</note>
+        </member>
+        
+        <member xml:id="Lay">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/EXO/Lay_Portrait.jpg?raw=true</portrait>
+            <stageName>Lay (레이)</stageName>
+            <nkBirthName>Zhang Jiashuai, his legalized name is Zhang Yixing (张艺兴)</nkBirthName>
+            <role>
+                <position num="1" roleType="dancer">Main Dancer</position>
+                <position num="2" roleType="vocalist">Sub Vocalist</position>
+                <position num="3" roleType="rapper">Sub Rapper</position>
+            </role>
+            <subunit>
+                <unit unitName="EXO-M">EXO-M</unit>
+            </subunit>
+            <height>176 cm (5’9″)</height>
+            <weight>60 kg (132 lbs)</weight>
+            <birthday when="1991-10-07">October 7, 1991</birthday>
+            <note>Lay is considered inactive in EXO and is currently promoting in China as a soloist.</note>
+        </member>
+        
+        <member xml:id="Baekhyun">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/EXO/Baekhyun_Portrait.jpg?raw=true</portrait>
+            <stageName>Baekhyun (백현)</stageName>
+            <koreanName>Byun Baek Hyun (변백현)</koreanName>
+            <role>
+                <position num="1" roleType="vocalist">Main Vocalist</position>
+            </role>
+            <subunit>
+                <unit unitName="EXO-K">EXO-K</unit>
+                <unit unitName="EXO-CBX">EXO-CBX</unit>
+                <unit unitName="EXO-Main-Vocal">EXO Main Vocal Line</unit>
+            </subunit>
+            <height>175 cm (5’9″)</height>
+            <weight>64 kg (141 lbs)</weight>
+            <birthday when="1992-05-06">May 6, 1992</birthday>
+        </member>
+        
+        <member xml:id="Chen">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/EXO/Chen_Portrait.jpg?raw=true</portrait>
+            <stageName>Chen (첸)</stageName>
+            <koreanName>Kim Jong Dae (김종대)</koreanName>
+            <role>
+                <position num="1" roleType="vocalist">Main Vocalist</position>
+            </role>
+            <subunit>
+                <unit unitName="EXO-M">EXO-M</unit>
+                <unit unitName="EXO-CBX">EXO-CBX</unit>
+                <unit unitName="EXO-Main-Vocal">EXO Main Vocal Line</unit>
+            </subunit>
+            <height>172.5 cm (5’8”)</height>
+            <weight>60 kg (132 lbs)</weight>
+            <birthday when="1992-09-21">September 21, 1992</birthday>
+        </member>
+        
+        <member xml:id="Chanyeol">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/EXO/Chanyeol_Portrait.jpeg?raw=true</portrait>
+            <stageName>Chanyeol (찬열)</stageName>
+            <koreanName>Park Chan Yeol (박찬열)</koreanName>
+            <role>
+                <position num="1" roleType="rapper">Main Rapper</position>
+                <position num="2" roleType="vocalist">Sub Vocalist</position>
+                <position num="3" roleType="visual">Visual</position>
+            </role>
+            <subunit>
+                <unit unitName="EXO-K">EXO-K</unit>
+                <unit unitName="EXO-SC">EXO-SC</unit>
+            </subunit>
+            <height>186 cm (6’1″)</height>
+            <weight>70 kg (154 lbs)</weight>
+            <birthday when="1992-09-27">November 27, 1992</birthday>
+        </member>
+        
+        <member xml:id="DO">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/EXO/DO_Portrait.jpeg?raw=true</portrait>
+            <stageName>D.O. (디오)</stageName>
+            <koreanName>Do Kyung Soo (도경수)</koreanName>
+            <role>
+                <position num="1" roleType="vocalist">Main Vocalist</position>
+            </role>
+            <subunit>
+                <unit unitName="EXO-K">EXO-K</unit>
+                <unit unitName="EXO-Main-Vocal">EXO Main Vocal Line</unit>
+            </subunit>
+            <height>172 cm (5’8″)</height>
+            <weight>60 kg (132 lbs)</weight>
+            <birthday when="1993-01-12">January 12, 1993</birthday>
+            <note>D.O. is currently doing mandatory military service and was not a part of Obsession.</note>
+        </member>
+        
+        <member xml:id="Kai">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/EXO/Kai_Portrait.jpg?raw=true</portrait>
+            <stageName>Kai (카이)</stageName>
+            <koreanName>Kim Jong In (김종인)</koreanName>
+            <role>
+                <position num="1" roleType="dancer">Main Dancer</position>
+                <position num="2" roleType="rapper">Sub Rapper</position>
+                <position num="3" roleType="vocalist">Sub Vocalist</position>
+                <position num="4" roleType="center">Center</position>
+                <position num="5" roleType="visual">Visual</position>
+            </role>
+            <subunit>
+                <unit unitName="EXO-K">EXO-K</unit>
+            </subunit>
+            <height>182 cm (5’11”)</height>
+            <weight>63 kg (138 lbs)</weight>
+            <birthday when="1994-01-14">January 14, 1994</birthday>
+        </member>
+        
+        <member xml:id="Sehun">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/EXO/Sehun_Portrait.jpeg?raw=true</portrait>
+            <stageName>Sehun (세훈)</stageName>
+            <koreanName></koreanName>
+            <role>
+                <position num="1" roleType="dancer">Main Dancer</position>
+                <position num="2" roleType="rapper">Main Rapper</position>
+                <position num="3" roleType="visual">Visual</position>
+                <position num="4" roleType="maknae">Maknae</position>
+            </role>
+            <subunit>
+                <unit unitName="EXO-K">EXO-K</unit>
+                <unit unitName="EXO-SC">EXO-SC</unit>
+            </subunit>
+            <height>183 cm (6’0″)</height>
+            <weight>66 kg (145 lbs)</weight>
+            <birthday when="1994-04-12">April 12, 1994</birthday>
+        </member>
+    </memberList>
+    
+    <formerMemberList>
+        <formerMember xml:id="Kris">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/EXO/Kris_Portrait.jpg?raw=true</portrait>
+            <stageName>Kris (크리스)</stageName>
+            <nkBirthName>Li Jiaheng, but his name was changed to Wu Yifan (吴亦凡)</nkBirthName>
+            <role>
+                <position num="1" roleType="leader">Former leader of EXO-M</position>
+                <position num="2" roleType="rapper">Main Rapper</position>
+            </role>
+            <subunit>
+                <unit unitName="EXO-M">Formerly in EXO-M</unit>
+            </subunit>
+            <height>186.6 cm (6’1″)</height>
+            <weight>73 kg (160 lbs)</weight>
+            <birthday when="1990-04-06">November 6, 1990</birthday>
+        </formerMember>
+        
+        <formerMember xml:id="Luhan">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/EXO/Luhan_Portrait.jpg?raw=true</portrait>
+            <stageName>Luhan (루한)</stageName>
+            <nkBirthName>Lu Han (鹿晗)</nkBirthName>
+            <role>
+                <position num="1" roleType="vocalist">Lead Vocalist</position>
+                <position num="2" roleType="dancer">Lead Dancer</position>
+                <position num="3" roleType="visual">Visual</position>
+                <position num="4" roleType="face">Former Face of The Group</position>
+            </role>
+            <subunit>
+                <unit unitName="EXO-M">Formerly in EXO-M</unit>
+            </subunit>
+            <height>175 cm (5’9″)</height>
+            <weight>52 kg (114 lbs)</weight>
+            <birthday when="1990-04-20">April 20, 1990</birthday>
+        </formerMember>
+        
+        <formerMember xml:id="Tao">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/EXO/Tao_Portrait.jpg?raw=true</portrait>
+            <stageName>Tao (타오)</stageName>
+            <nkBirthName>Huang Zitao (黄子韬)</nkBirthName>
+            <role>
+                <position num="1" roleType="rapper">Lead Rapper</position>
+                <position num="2" roleType="dancer">Lead Dancer</position>
+                <position num="3" roleType="vocalist">Sub Vocalist</position>
+            </role>
+            <subunit>
+                <unit unitName="EXO-M">Formerly in EXO-M</unit>
+            </subunit>
+            <height>184 cm (6’0″)</height>
+            <weight>68 kg (149 lbs)</weight>
+            <birthday when="1993-05-02">May 2, 1993</birthday>
+        </formerMember>
+    </formerMemberList>
+    
+    <subunitList>
+        <groupSubunit xml:id="EXO-K">
+            <subunitName unitName="EXO-K">EXO-K</subunitName>
+            <subunitMembers subunitMemberName="Suho">Suho (수호)</subunitMembers>
+            <subunitMembers subunitMemberName="Baekhyun">Baekhyun (백현)</subunitMembers>
+            <subunitMembers subunitMemberName="Chanyeol">Chanyeol (찬열)</subunitMembers>
+            <subunitMembers subunitMemberName="DO">D.O. (디오)</subunitMembers>
+            <subunitMembers subunitMemberName="Kai">Kai (카이)</subunitMembers>
+            <subunitMembers subunitMemberName="Sehun">Sehun (세훈)</subunitMembers>
+        </groupSubunit>
+        
+        <groupSubunit xml:id="EXO-M">
+            <subunitName unitName="EXO-M">EXO-M</subunitName>
+            <subunitMembers subunitMemberName="Xiumin">Xiumin (시우민)</subunitMembers>
+            <subunitMembers subunitMemberName="Lay">Lay (레이)</subunitMembers>
+            <subunitMembers subunitMemberName="Chen">Chen (첸)</subunitMembers>
+            <subunitMembers subunitMemberName="Kris">(Former Member) Kris (크리스)</subunitMembers>
+            <subunitMembers subunitMemberName="Luhan">(Former Member) Luhan (루한)</subunitMembers>
+            <subunitMembers subunitMemberName="Tao">(Former Member) Tao (타오)</subunitMembers>
+        </groupSubunit>
+        
+        <groupSubunit xml:id="EXO-Main-Vocal">
+            <subunitName unitName="EXO-Main-Vocal">EXO Main Vocal Line</subunitName>
+            <subunitMembers subunitMemberName="Suho">Suho (수호)</subunitMembers>
+            <subunitMembers subunitMemberName="Baekhyun">Baekhyun (백현)</subunitMembers>
+            <subunitMembers subunitMemberName="Chen">Chen (첸)</subunitMembers>
+            <subunitMembers subunitMemberName="DO">D.O. (디오)</subunitMembers>
+        </groupSubunit>
+        
+        <groupSubunit xml:id="EXO-CBX">
+            <subunitName unitName="EXO-CBX">EXO-CBX</subunitName>
+            <subunitMembers subunitMemberName="Chen">Chen (첸)</subunitMembers>
+            <subunitMembers subunitMemberName="Baekhyun">Baekhyun (백현)</subunitMembers>
+            <subunitMembers subunitMemberName="Xiumin">Xiumin (시우민)</subunitMembers>
+        </groupSubunit>
+        
+        <groupSubunit xml:id="EXO-SC">
+            <subunitName unitName="EXO-SC">EXO-SC</subunitName>
+            <subunitMembers subunitMemberName="Sehun">Sehun (세훈)</subunitMembers>
+            <subunitMembers subunitMemberName="Chanyeol">Chanyeol (찬열)</subunitMembers>
+        </groupSubunit>
+    </subunitList>
+</groupPage>

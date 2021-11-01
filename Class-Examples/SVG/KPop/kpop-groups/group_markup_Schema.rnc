@@ -1,0 +1,142 @@
+start = groupPage
+groupPage = element groupPage {about, memberList, formerMemberList?, subunitList?}
+about = element about {groupName, bgInfo, company, debutDate, debutSong, discography, fandomName, fandomColor?, lightstick, currentRank?}
+# This about element is meant to store background information in a SET SEQUENCE
+# Discography typo fixed. Sorry about that! 
+
+groupName = element groupName {artistRef?, xmlid?, text}
+bgInfo = element bgInfo {p+}
+# Put general background info on the group in this element
+# Basically just explain the idea/origins of the group, meaning behind name, anything
+
+company = element company {xmlid, text}
+# Companies are BIG in K-Pop (lots of drama relating to the Big 3)
+# Companies /usually/ double as labels for their groups
+
+labelRef = attribute labelRef {text}
+# labelRef is used in two different ways:
+# 1. Specifying the label/company in the company element
+# 2. Acting as a reference for compMent whenever a company is mentioned (like in bgInfo)
+
+p = element p {mixed{(groupMent | group | memberMent | albumMent | compMent | quote | link)*}}
+xmlid = attribute xml:id {xsd:ID}
+debutDate = element debutDate {when, text}
+when = attribute when {xsd:date}
+debutSong = element debutSong {text}
+discography = element discography {album*}
+# The discography lists out each major album/single for a group
+# But we only need to put an xml:id on an album with the song that we've marked up
+
+album = element album {albumType?, xmlid?, text}
+albumType = attribute albumType {"mini" | "full" | "live" | "repackage" | "single" | "extended"}
+albumRef = attribute albumRef {text}
+
+fandomName = element fandomName {text}
+# Basically every group has a special name they call their fans
+# I'm including this, because fandom culture is SO immensely important in K-Pop
+
+fandomColor = element fandomColor {color+}
+color = element color {colorHex, text}
+# Yes, some K-Pop groups have color(s) associated with themselves and their fandoms
+# I'm adding a new child element, color, to make the XSLT run a lot smoother
+
+colorHex = attribute colorHex {text}
+# colorHex holds the html hex code for the color (with the #)
+# {text} because I couldn't find a datatype that's specifically for hex codes 
+
+lightstick = element lightstick {xsd:anyURI}
+# Lighsticks are used at concerts, just another way to support a group you like
+# We'll put images here, for now they'll be hosted on GitHub
+
+currentRank = element currentRank {xsd:integer}
+# The current rank referes to Brand Reputation in Korea (see GitHub issue #3)
+# Only use if applicable, leave out if you're not sure
+
+artistRef = attribute artistRef {text}
+# artistRef is used whenever ANY artist with an existing xml:id, group/member/whoever, is referenced
+
+group = element group {xmlid, text}
+groupMent = element groupMent {artistRef, text}
+# Element used if a group with an existing group page is mentioned/referenced
+# CHANGED NAME: from groupRef to groupMent (Ment as in Mention)
+# Ref --> Ment change b/c it was getting confusing between elements and attributes
+# All reference ELEMENTS will now use "Ment" instead of "Ref"
+
+memberMent = element memberMent {artistRef, text}
+# Element used if a member is mentioned/referenced in bgInfo
+
+albumMent = element albumMent {albumRef, text}
+# Element used if a album with an existing xml:id is mentioned/referenced in bgInfo
+
+compMent = element compMent {labelRef, text}
+# Element used if a company with an existing xml:id is mentioned/referenced in bgInfo
+
+quote = element quote {quoteURL?, text}
+quoteURL = attribute quoteURL {xsd:anyURI}
+link = element link {linkURL, text}
+linkURL = attribute linkURL {xsd:anyURI}
+memberList = element memberList {member+}
+formerMemberList = element formerMemberList {formerMember+}
+member = element member {xmlid?, artistRef?, portrait, stageName, koreanName?, nkBirthName?, role, subunit?, height, weight?, birthday, note?}
+# This is a lot of info (probably unnecessary)
+# I wanted to emphasize how K-Pop and its community focuses on idols 
+# Also, the artistRef is there for the NCT pages, referencing pre-established xml:ids across docs
+
+portrait = element portrait {xsd:anyURI}
+# Portrait images go here, for now they'll be URLs hosted on GitHub
+
+stageName = element stageName {text}
+# stageName is the only Name element that's mandatory 
+
+koreanName = element koreanName {text}
+# koreanName is used for the full birth names of native Korean memebers
+# OR the the Korean name of a foreigner 
+
+nkBirthName = element nkBirthName {text}
+# nkBirthName stands for "not korean Birth Name"
+# Used for the full birth names of foreign members (i.e. NOT Korean) only
+# Example for how to use these elemements together:
+# Mark (NCT) --> He's Canadian with a foreign birth name (Mark) and a Korean name (Minhyung)
+    # stageName = Mark, koreanName = Lee Minhyung, nkBirthName = Mark Lee 
+
+role = element role {position+}
+position = element position {num, roleType, text}
+# Only put as many positions as the member fulfills
+# Some members fill like 5 roles, some only 1
+
+num = attribute num {xsd:integer}
+# List the roles in order of priority, e.g. Main goes before Lead, which goes before Sub, etc.
+# Just reference KProfiles if you get stuck and go with the order they use
+
+roleType = attribute roleType {"dancer" | "rapper" | "vocalist" | "leader" | "visual" | "center" | "maknae" | "producer" | "face"}
+# These are the roles I'm familiar with, but we may need to add more as we go
+# I should mention, "maknae" = the youngest person in a group
+# Age and seniority is very important in Korean culture, so being the youngest is notable
+
+subunit = element subunit {unit+}
+# Subunits are optional, because not all groups have subunits
+# Only use this element if it's applicable
+
+unit = element unit {unitName?, text}
+unitName = attribute unitName {text}
+
+height = element height {text}
+weight = element weight {text}
+# Changed and made optional, not all companies release this info
+
+birthday = element birthday {when, text}
+note = element note {text}
+# Only used when there's something to note about the status of a member in a group
+# Sometimes members are considered "inactive" but still a part of a group (like Lay of EXO)
+
+formerMember = element formerMember {xmlid?, artistRef?, portrait, stageName, koreanName?, nkBirthName?, role, subunit?, height, weight?, birthday, note?}
+# I decided to add a former member item for the memberList
+
+subunitList = element subunitList {groupSubunit+}
+# Because some subunits (like 3RACHA) are credited producers/writers
+# I decided to make a dedicated subunit section
+
+groupSubunit = element groupSubunit {xmlid, subunitName, subunitMembers+, text}
+subunitName = element subunitName {unitName, text}
+subunitMembers = element subunitMembers {subunitMemberName, text}
+subunitMemberName = attribute subunitMemberName {xsd:IDREF}

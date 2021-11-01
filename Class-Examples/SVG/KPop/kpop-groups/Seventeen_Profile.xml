@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="group_markup_Schema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../markedup_songs/xmlidChecker.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<groupPage>
+    <about>
+        <groupName xml:id="Seventeen">Seventeen (세븐틴)</groupName>
+        <bgInfo>
+            <p>Seventeen is a 13-member group under <compMent labelRef="PledisEnt">Pledis Entertainment</compMent>, which was recently bought by <compMent labelRef="BigHitEnt">Big Hit</compMent> (notable for being BTS’s company), though they currently operate independently. They were originally intended to debut with 17 members, hence the name, but 4 members dropped out or were deemed unfit for debut; the name “Seventeen” now signifies the 13 members + 3 subunits + 1 fandom.</p>
+            
+            <p>They’re well-known for being a self-producing group, meaning many of the members themselves write, compose, and produce much of the music and even design the choreography to go with the songs. </p>
+            
+            <p>The group is made up of 3 different subunits, which focus on the different specializations of the members: the <groupMent artistRef="Hip-Hop-Team">Hip-Hop Team</groupMent> (which focuses on rapping), <groupMent artistRef="Vocal-Team">Vocal Team</groupMent> (singing), and <groupMent artistRef="Performance-Team">Performance Team</groupMent> (dance and choreography). Each subunit has a leader, and the leaders themselves make a subunit of their own: <groupMent artistRef="SVT-Leaders">SVT Leaders</groupMent> (SVT is an abbreviation of Seventeen). Members DK, Hoshi, and Seungkwan also make a subunit called <groupMent artistRef="BSS">BooSeokSoon or BSS</groupMent>.</p>
+        </bgInfo>
+        <company xml:id="PledisEnt">Pledis Entertainment</company>
+        <debutDate when="2015-05-26">May 26, 2015</debutDate>
+        <debutSong>Adore U</debutSong>
+        <discography>
+            <album albumType="mini">17 Carat</album>
+            <album albumType="mini">Boys Be</album>
+            <album albumType="full">Love &amp; Letter</album>
+            <album albumType="repackage">Very Nice</album>
+            <album albumType="mini">Going Seventeen</album>
+            <album albumType="mini" xml:id="Al1">Al1</album>
+            <album albumType="full">Teen, Age</album>
+            <album albumType="mini">Director’s Cut</album>
+            <album albumType="mini">We Make You</album>
+            <album albumType="mini">You Make My Day</album>
+            <album albumType="mini">You Made My Dawn</album>
+            <album albumType="single">HIT</album>
+            <album albumType="single">Happy Ending</album>
+            <album albumType="full">An Ode</album>
+            <album albumType="single">Fallin’ Flower</album>
+            <album albumType="mini">Heng:garæ</album>
+        </discography>
+        <fandomName>Carat</fandomName>
+        <fandomColor>
+            <color colorHex="#f6cac9">Rose Quartz</color>
+            <color colorHex="#93a9ce">Serenity</color>
+        </fandomColor>
+        <lightstick>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/lightsticks/Seventeen_Lightstick.png?raw=true</lightstick>
+        <currentRank>8</currentRank>
+    </about> 
+    
+    <memberList>
+        
+        <member xml:id="SCoups">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Seventeen/SCoups_Portrait.jpg?raw=true</portrait>
+            <stageName>S.Coups (에스쿱스)</stageName>
+            <koreanName>Choi Seung Cheol (최승철)</koreanName>
+            <role>
+                <position num="1" roleType="leader">Leader (Seventeen and Hip-Hop Team)</position>
+                <position num="2" roleType="rapper">Main Rapper</position>
+                <position num="3" roleType="vocalist">Sub Vocalist</position>
+            </role>
+            <subunit>
+                <unit unitName="Hip-Hop-Team">Hip-Hop Team</unit>
+                <unit unitName="SVT-Leaders">SVT Leaders</unit>
+            </subunit>
+            <height>178 cm (5’10”)</height>
+            <weight>65 kg (143 lbs)</weight>
+            <birthday when="1995-08-08">August 8, 1995</birthday>
+        </member>
+        
+        <member xml:id="Jeonghan">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Seventeen/Jeonghan_Portrait.jpg?raw=true</portrait>
+            <stageName>Jeonghan (정한)</stageName>
+            <koreanName>Yoon Jeong Han (윤정한)</koreanName>
+            <role>
+                <position num="1" roleType="vocalist">Lead Vocalist</position>
+            </role>
+            <subunit>
+                <unit unitName="Vocal-Team">Vocal Team</unit>
+            </subunit>
+            <height>178 cm (5’10”)</height>
+            <weight>62 kg (137 lbs)</weight>
+            <birthday when="1995-10-04">October 4, 1995</birthday>
+        </member>
+        
+        <member xml:id="Joshua">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Seventeen/Joshua_Portrait.jpg?raw=true</portrait>
+            <stageName>Joshua (조슈아)</stageName>
+            <koreanName>Hong Ji Soo (홍지수)</koreanName>
+            <nkBirthName>Joshua Hong</nkBirthName>
+            <role>
+                <position num="1" roleType="vocalist">Lead Vocalist</position>
+                <position num="2" roleType="visual">Visual</position>  
+            </role>
+            <subunit>
+                <unit unitName="Vocal-Team">Vocal Team</unit>
+            </subunit>
+            <height>177 cm (5’10”)</height>
+            <weight>60 kg (132 lbs)</weight>
+            <birthday when="1995-12-30">December 30, 1995</birthday>
+        </member>
+        
+        <member xml:id="Jun">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Seventeen/Jun_Portrait.jpg?raw=true</portrait>
+            <stageName>Jun (준)</stageName>
+            <koreanName>Moon Jun Hwi (문준휘)</koreanName>
+            <nkBirthName>Wen Junhui (文俊辉)</nkBirthName>
+            <role>
+                <position num="1" roleType="dancer">Lead Dancer</position>
+                <position num="2" roleType="vocalist">Sub Vocalist</position>
+            </role>
+            <subunit>
+                <unit unitName="Performance-Team">Performance Team</unit>
+            </subunit>
+            <height>182 cm (6’0″)</height>
+            <weight>66 kg (145 lbs)</weight>
+            <birthday when="1996-06-10">June 10, 1996</birthday>
+        </member>
+        
+        <member xml:id="Hoshi">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Seventeen/Hoshi_Portrait.jpg?raw=true</portrait>
+            <stageName>Hoshi (호시)</stageName>
+            <koreanName>Kwon Soon Young (권순영)</koreanName>
+            <role>
+                <position num="1" roleType="leader">Leader (Performance Team)</position>
+                <position num="2" roleType="dancer">Main Dancer</position>
+                <position num="3" roleType="vocalist">Lead Vocalist</position>
+                <position num="4" roleType="rapper">Sub Rapper</position>
+            </role>
+            <subunit>
+                <unit unitName="Performance-Team">Performance Team</unit>
+                <unit unitName="SVT-Leaders">SVT Leaders</unit>
+                <unit unitName="BSS">BooSeokSoon</unit>
+            </subunit>
+            <height>177 cm (5’10”)</height>
+            <weight>61 kg (134 lbs)</weight>
+            <birthday when="1996-05-15">June 15, 1996</birthday>
+        </member>
+        
+        <member xml:id="Wonwoo">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Seventeen/Wonwoo_Portrait.jpg?raw=true</portrait>
+            <stageName>Wonwoo (원우)</stageName>
+            <koreanName>Jeon Won Woo (전원우)</koreanName>
+            <role>
+                <position num="1" roleType="rapper">Lead Rapper</position>
+                <position num="2" roleType="vocalist">Sub Vocalist</position>
+            </role>
+            <subunit>
+                <unit unitName="Hip-Hop-Team">Hip-Hop Team</unit>
+            </subunit>
+            <height>182 cm (6’0″)</height>
+            <weight>63 kg (138 lbs)</weight>
+            <birthday when="1996-06-17">July 17, 1996</birthday>
+        </member>
+        
+        <member xml:id="Woozi">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Seventeen/Woozi_Portrait.jpg?raw=true</portrait>
+            <stageName>Woozi (우지)</stageName>
+            <koreanName>Lee Ji Hoon (이지훈)</koreanName>
+            <role>
+                <position num="1" roleType="leader">Leader (Vocal Team)</position>
+                <position num="4" roleType="vocalist">Lead Vocalist</position>
+                <position num="5" roleType="producer">Producer</position>
+            </role>
+            <subunit>
+                <unit unitName="Vocal-Team">Vocal Team</unit>
+                <unit unitName="SVT-Leaders">SVT Leaders</unit>
+            </subunit>
+            <height>164 cm (5’5″)</height>
+            <weight>53 kg (116 lbs)</weight>
+            <birthday when="1996-11-22">November 22, 1996</birthday>
+        </member>
+        
+        <member xml:id="DK">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Seventeen/DK_Portrait.jpg?raw=true</portrait>
+            <stageName>DK / Dokyeom (도겸)</stageName>
+            <koreanName>Lee Seok Min (이석민)</koreanName>
+            <role>
+                <position num="1" roleType="vocalist">Sub Vocalist</position>
+            </role>
+            <subunit>
+                <unit unitName="Vocal-Team">Vocal Team</unit>
+                <unit unitName="BSS">BooSeokSoon</unit>
+            </subunit>
+            <height>179 cm (5’10.5″)</height>
+            <weight>66 kg (145 lbs)</weight>
+            <birthday when="1997-02-18">February 18, 1997</birthday>
+        </member>
+        
+        <member xml:id="Mingyu">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Seventeen/Mingyu_Portrait.jpg?raw=true</portrait>
+            <stageName>Mingyu (민규)</stageName>
+            <koreanName>Kim Min Gyu (김민규)</koreanName>
+            <role>
+                <position num="1" roleType="rapper">Lead Rapper</position>
+                <position num="2" roleType="vocalist">Sub Vocalist</position>
+                <position num="3" roleType="visual">Visual</position>
+                <position num="4" roleType="face">Face of the Group</position>
+            </role>
+            <subunit>
+                <unit unitName="Hip-Hop-Team">Hip-Hop Team</unit>
+            </subunit>
+            <height>187 cm (6’2″)</height>
+            <weight>70 kg (154 lbs)</weight>
+            <birthday when="1997-04-06">April 6, 1997</birthday>
+        </member>
+        
+        <member xml:id="The8">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Seventeen/The8_Portrait.jpg?raw=true</portrait>
+            <stageName>The8 (디에잇)</stageName>
+            <koreanName>Seo Myung Ho (서명호)</koreanName>
+            <nkBirthName>Xu Ming Hao (徐明浩)</nkBirthName>
+            <role>
+                <position num="1" roleType="dancer">Lead Dancer</position>
+                <position num="2" roleType="vocalist">Sub Vocalist</position>
+                <position num="3" roleType="rapper">Sub Rapper</position>
+            </role>
+            <subunit>
+                <unit unitName="Performance-Team">Performance Team</unit>
+            </subunit>
+            <height>178 cm (5’10”)</height>
+            <weight>58 kg (128 lbs)</weight>
+            <birthday when="1997-11-07">November 7, 1997</birthday>
+        </member>
+        
+        <member xml:id="Seungkwan">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Seventeen/Seungkwan_Portrait.jpg?raw=true</portrait>
+            <stageName>Seungkwan (승관)</stageName>
+            <koreanName>Boo Seung Kwan (부승관)</koreanName>
+            <role>
+                <position num="1" roleType="vocalist">Main Vocalist</position>
+                <position num="2" roleType="face">Face of the Group</position>
+            </role>
+            <subunit>
+                <unit unitName="Vocal-Team">Vocal Team</unit>
+                <unit unitName="BSS">BooSeokSoon</unit>
+            </subunit>
+            <height>174 cm (5’8.5”)</height>
+            <weight>58 kg (127 lbs)</weight>
+            <birthday when="1998-01-16">January 16, 1998</birthday>
+        </member>
+        
+        <member xml:id="Vernon">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Seventeen/Vernon_Portrait.jpg?raw=true</portrait>
+            <stageName>Vernon (버논)</stageName>
+            <koreanName>Choi Han Sol (최한솔)</koreanName>
+            <nkBirthName>Hansol Vernon Chwe</nkBirthName>
+            <role>
+                <position num="1" roleType="rapper">Main Rapper</position>
+                <position num="2" roleType="vocalist">Sub Vocalist</position>
+                <position num="3" roleType="visual">Visual</position>
+                <position num="4" roleType="face">Face of the Group</position>
+            </role>
+            <subunit>
+                <unit unitName="Hip-Hop-Team">Hip-Hop Team</unit>
+            </subunit>
+            <height>178 cm (5’10″)</height>
+            <weight>62 kg (136 lbs)</weight>
+            <birthday when="1998-02-18">February 18, 1998</birthday>
+        </member>
+        
+        <member xml:id="Dino">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Seventeen/Dino_Portrait.jpg?raw=true</portrait>
+            <stageName>Dino (디노)</stageName>
+            <koreanName>Lee Chan (이찬)</koreanName>
+            <role>
+                <position num="1" roleType="dancer">Main Dancer</position>
+                <position num="2" roleType="vocalist">Sub Vocalist</position>
+                <position num="3" roleType="rapper">Sub Rapper</position>
+                <position num="4" roleType="maknae">Visual</position>
+            </role>
+            <subunit>
+                <unit unitName="Performance-Team">Performance Team</unit>
+            </subunit>
+            <height>174 cm (5’8.5″)</height>
+            <weight>56 kg (123 lbs)</weight>
+            <birthday when="1999-02-11">February 11, 1999</birthday>
+        </member>
+    </memberList>
+    
+    <subunitList>
+        <groupSubunit xml:id="Hip-Hop-Team">
+            <subunitName unitName="Hip-Hop-Team">Hip-Hop Team</subunitName>
+            <subunitMembers subunitMemberName="SCoups">S.Coups (에스.쿱스)</subunitMembers>
+            <subunitMembers subunitMemberName="Wonwoo">Wonwoo (원우)</subunitMembers>
+            <subunitMembers subunitMemberName="Mingyu">Mingyu (민규)</subunitMembers>
+            <subunitMembers subunitMemberName="Vernon">Vernon (버논)</subunitMembers>
+        </groupSubunit>
+        
+        <groupSubunit xml:id="Vocal-Team">
+            <subunitName unitName="Vocal-Team">Vocal Team</subunitName>
+            <subunitMembers subunitMemberName="Woozi">Woozi (우지)</subunitMembers>
+            <subunitMembers subunitMemberName="Jeonghan">Jeonghan (정한)</subunitMembers>
+            <subunitMembers subunitMemberName="Joshua">Joshua (조슈아)</subunitMembers>
+            <subunitMembers subunitMemberName="DK">DK (도겸)</subunitMembers>
+            <subunitMembers subunitMemberName="Seungkwan">Seungkwan (승관)</subunitMembers>
+        </groupSubunit>
+        
+        <groupSubunit xml:id="Performance-Team">
+            <subunitName unitName="Performance-Team">Performance Team</subunitName>
+            <subunitMembers subunitMemberName="Hoshi">Hoshi (호시)</subunitMembers>
+            <subunitMembers subunitMemberName="Jun">Jun (준)</subunitMembers>
+            <subunitMembers subunitMemberName="The8">The8 (디에잇)</subunitMembers>
+            <subunitMembers subunitMemberName="Dino">Dino (디노)</subunitMembers>
+        </groupSubunit>
+        
+        <groupSubunit xml:id="SVT-Leaders">
+            <subunitName unitName="SVT-Leaders">SVT Leaders</subunitName>
+            <subunitMembers subunitMemberName="SCoups">S.Coups (에스.쿱스)</subunitMembers>
+            <subunitMembers subunitMemberName="Hoshi">Hoshi (호시)</subunitMembers>
+            <subunitMembers subunitMemberName="Woozi">Woozi (우지)</subunitMembers>
+        </groupSubunit>
+        
+        <groupSubunit xml:id="BSS">
+            <subunitName unitName="BSS">BooSeokSoon</subunitName>
+            <subunitMembers subunitMemberName="DK">DK (도겸)</subunitMembers>
+            <subunitMembers subunitMemberName="Hoshi">Hoshi (호시)</subunitMembers>
+            <subunitMembers subunitMemberName="Seungkwan">Seungkwan (승관)</subunitMembers>
+        </groupSubunit>
+    </subunitList>
+</groupPage>

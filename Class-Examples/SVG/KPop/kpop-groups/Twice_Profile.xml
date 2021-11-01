@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="group_markup_Schema.rnc" type="application/relax-ng-compact-syntax"?>
+<groupPage>        
+    <about>
+        <groupName xml:id="Twice">Twice (트와이스)</groupName>
+        <bgInfo>
+            <p>Twice is a 9 member girl group formed by<compMent labelRef="JYPEnt"> JYP Entertainment</compMent></p>
+            <p>Twice members were decided through SIXTEEN, a survival show.</p>
+        </bgInfo>
+        <company xml:id="JYPEnt">JYP Entertainment</company>
+        <debutDate when="2015-10-20">October 20, 2015</debutDate>
+        <debutSong>Like OOH-AHH</debutSong>
+        <discography>
+            <album albumType="mini">The Story Begins</album>
+            <album albumType="mini">Page Two</album>
+            <album albumType="mini">TWICEcoaster: Lane 1</album>
+            <album albumType="mini">TWICEcoaster: Lane 2e</album>
+            <album albumType="mini">What’s TWICE?</album>
+            <album albumType="mini">Signal</album>
+            <album albumType="repackage">#TWICE</album>
+            <album albumType="single">One More Time</album>
+            <album albumType="full" xml:id="Twicetagram">Twicetagram</album>
+            <album albumType="repackage">Merry &amp; Happy</album>
+            <album albumType="single">Candy Pop</album>
+            <album albumType="mini">What is Love?</album>
+            <album albumType="single">Wake Me Up</album>
+            <album albumType="single">I Want You Back</album>
+            <album albumType="mini">Summer Nights</album>
+            <album albumType="full">BDZ</album>
+            <album albumType="single">Stay By My Side</album>
+            <album albumType="mini">YES or YES</album>
+            <album albumType="mini">The Year of “YES”</album>
+            <album albumType="repackage">BDZ ~Repackage~</album>
+            <album albumType="repackage"> #TWICE2 </album>
+            <album albumType="mini"> Fancy You</album>
+            <album albumType="single">Happy Happy</album>
+            <album albumType="single">Breakthrough</album>
+            <album albumType="mini">Feel Special</album>
+            <album albumType="full">&amp;TWICE</album>
+            <album albumType="mini">More &amp; More</album>
+            <album albumType="single">Fanfare</album>
+            <album albumType="single">More &amp; More (English Ver.)</album>
+            <album albumType="full">#TWICE3</album>
+        </discography>
+        <fandomName>Once</fandomName>
+        <fandomColor>
+            <color colorHex="#eb8038">Apricot</color>
+            <color colorHex="#ff00ff">Neon Magenta</color>
+        </fandomColor>
+        <lightstick>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/lightsticks/Twice_Lightstick.png?raw=true</lightstick>
+        <currentRank>10</currentRank>
+    </about>
+    <memberList>
+        
+        <member xml:id="Jihyo">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Twice/Jihyo_Portrait.jpg?raw=true</portrait>
+            <stageName>Jihyo (지효)</stageName>
+            <koreanName>Park Ji Soo (박지수) but legalized her name to Park Ji Hyo (박지효))</koreanName>
+            <role>
+                <position num="1" roleType="leader">Leader</position>
+                <position num="2" roleType="vocalist">Main Vocalist</position>
+            </role>
+            <height>162 cm (5 ft 3¾ in)</height>
+            <weight>56 kg (123 lbs)</weight>
+            <birthday when="1997-02-01">February 1, 1997</birthday>
+        </member>
+        
+        <member xml:id="Nayeon">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Twice/Nayeon_Portrait.jpg?raw=true</portrait>
+            <stageName>Nayeon (나연)</stageName>
+            <koreanName>Im Na Yeon (임나연)</koreanName>
+            <role>
+            <position num="1" roleType="vocalist">Lead Vocalist</position>
+            <position num="2" roleType="dancer">Lead Dancer</position>
+            <position num="3" roleType="center">Center</position>    
+            </role>
+            <height>163 cm (5’4″)</height>
+            <weight>47 kg (104 lbs)</weight>
+            <birthday when="1995-09-22">September 22, 1995</birthday>
+        </member>
+        
+        <member xml:id="Jeongyeon">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Twice/Jeongyeon_Portrait.jpg?raw=true</portrait>
+            <stageName>Jeongyeon (정연)</stageName>
+            <koreanName>Yoo Kyung Wan (유경완), but she legalized her name to Yoo Jeong Yeon (유정연)</koreanName>
+            <role>
+                <position num="1" roleType="vocalist">Lead Vocalist</position>    
+            </role>
+            <height>169 cm (5’7″)</height>
+            <weight>49.1 kg (108 lbs)</weight>
+            <birthday when="1996-11-01">November 1, 1996</birthday>
+        </member>
+        
+        <member xml:id="Momo">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Twice/Momo_Portrait.jpg?raw=true</portrait>
+            <stageName>Momo (모모)</stageName>
+            <nkBirthName> Hirai Momo (平井 もも)</nkBirthName>
+            <role>
+                <position num="1" roleType="dancer">Main Dancer</position>
+                <position num="2" roleType="vocalist">Sub Vocalist</position>
+                <position num="2" roleType="rapper">Sub Rapper</position>    
+            </role>
+            <height>167 cm (5’6″)</height>
+            <weight>48.5 kg (106 lbs)</weight>
+            <birthday when="1996-11-09">November 9, 1996</birthday>
+        </member>
+        
+        <member xml:id="Sana">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Twice/Sana_Portrait.jpg?raw=true</portrait>
+            <stageName>Sana (사나)</stageName>
+            <nkBirthName> Minatozaki Sana (湊崎 紗夏)</nkBirthName>
+            <role>
+                <position num="1" roleType="vocalist">Sub Vocalist</position>
+            </role>
+            <height>168 cm (5’6″)</height>
+            <weight>47 kg (104 lbs)</weight>
+            <birthday when="1996-12-29">December 29, 1996</birthday>
+        </member>
+        
+        <member xml:id="Mina">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Twice/Mina_Portrait.jpg?raw=true</portrait>
+            <stageName>Mina (미나)</stageName>
+            <nkBirthName> Myoui Mina (名井 南)</nkBirthName>
+            <role>
+                <position num="1" roleType="dancer">Main Dancer</position>
+                <position num="2" roleType="vocalist">Sub Vocalist</position>
+            </role>
+            <height>163 cm (5’4″)</height>
+            <weight>46 kg (101 lbs)</weight>
+            <birthday when="1997-06-24">March 24, 1997</birthday>
+        </member>
+        
+        <member xml:id="Dahyun">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Twice/Dahyun_Portrait.jpg?raw=true</portrait>
+            <stageName>Dahyun (다현)</stageName>
+            <koreanName> Kim Da Hyun (김다현)</koreanName>
+            <role>
+                <position num="1" roleType="rapper">Lead Rapper</position>
+                <position num="2" roleType="vocalist">Sub Vocalist</position>  
+            </role>
+            <height>165 cm (5’5″)</height>
+            <weight>48.9 kg (108 lbs)</weight>
+            <birthday when="1998-05-28">May 28, 1998</birthday>
+        </member>       
+        
+        <member xml:id="Chaeyoung">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Twice/Chaeyoung_Portrait.jpg?raw=true</portrait>
+            <stageName>Chaeyoung (채영)</stageName>
+            <koreanName> Son Chae Young (손채영)</koreanName>
+            <role>
+                <position num="1" roleType="rapper">Main Rapper</position>
+                <position num="2" roleType="vocalist">Sub Vocalist</position>
+            </role>
+            <height>163 cm (5’4″)</height>
+            <weight>46 kg (101 lbs)</weight>
+            <birthday when="1999-04-23">April 23, 1999</birthday>
+        </member>
+        
+        <member xml:id="Tzuyu">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Twice/Tzuyu_Portrait.jpg?raw=true</portrait>
+            <stageName>Tzuyu (쯔위)</stageName>
+            <koreanName>Chou Tzu Yu (저우쯔위/주자유)</koreanName>
+            <nkBirthName>Chou Tzuyu (周子瑜)</nkBirthName>
+            <role>
+                
+                <position num="1" roleType="dancer">Lead Dancer</position>
+                <position num="2" roleType="vocalist">Sub Vocalist</position> 
+                <position num="3" roleType="visual">Visual</position>
+                <position num="4" roleType="maknae">Maknae</position>
+            </role>
+            <height>170 cm (5’7″</height>
+            <weight>48 kg (106 lbs)</weight>
+            <birthday when="1999-06-14">June 14, 1999</birthday>
+        </member>
+    </memberList>
+     
+</groupPage>

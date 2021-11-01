@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="group_markup_Schema.rnc" type="application/relax-ng-compact-syntax"?>
+<groupPage>
+    <about>
+        <groupName xml:id="BTS">BTS (방탄소년단)</groupName>
+        <bgInfo>
+            <p>BTS is a 7-member group under the company <compMent labelRef="BigHitEnt">Big Hit Entertainment</compMent>. Over the course of their 7-years career, the group has managed to become the world’s biggest K-Pop group. They continue to break records and make millions of dollars (billions in the Korean currency, won) of profit from concerts, merchandising, and album sales. </p>
+            
+            <p>A fact that’s not as well-known about BTS is the level of creative control they’re often given over their own music. While they aren't entirely self-producing like groups <groupMent artistRef="Seventeen">Seventeen</groupMent> or <groupMent artistRef="Stray-Kids">Stray Kids</groupMent>, members <memberMent artistRef="RM">RM</memberMent> and <memberMent artistRef="Suga">Suga</memberMent> do an impressive amount of the producing, composing, and lyrical writing throughout the group’s discography. <memberMent artistRef="RM">RM</memberMent>, BTS’s leader, has the 4th highest number of copyrighted songs in all of K-Pop, with main rapper <memberMent artistRef="Suga">Suga</memberMent> at a respectable 9th place, as seen in <link linkURL="https://www.allkpop.com/article/2020/10/kpop-idols-who-own-the-most-copyrights-updated-in-october-2020">this Allkpop article</link>.</p>
+        </bgInfo>
+        <company xml:id="BigHitEnt">Big Hit Entertainment</company>
+        <debutDate when="2013-06-13">June 13, 2013</debutDate>
+        <debutSong>No More Dream</debutSong>
+        <discography>
+            <album albumType="mini">2 Cool 4 Skool</album>
+            <album albumType="mini">O!Rul8,2?</album>
+            <album albumType="mini">Skool Luv Affair</album>
+            <album albumType="repackage">Skool Luv Affair (Special Addition)</album>
+            <album albumType="single">No More Dream</album>
+            <album albumType="single">Boy In Luv</album>
+            <album albumType="full">Dark &#38; Wild</album>
+            <album albumType="single">Danger</album>
+            <album albumType="full">Wake Up</album>
+            <album albumType="mini">The Most Beautiful Moment in Life Pt. 1</album>
+            <album albumType="single">For You</album>
+            <album albumType="mini">The Most Beautiful Moment in Life Pt. 2</album>
+            <album albumType="single">I Need U</album>
+            <album albumType="single">Run</album>
+            <album albumType="repackage">The Most Beautiful Moment in Life: Young Forever</album>
+            <album albumType="full">Youth</album>
+            <album albumType="full">Wings</album>
+            <album albumType="repackage">The Best of BTS -Japan Edition-</album>
+            <album albumType="repackage">The Best of BTS -Korea Edition-</album>
+            <album albumType="repackage">You Never Walk Alone</album>
+            <album albumType="single">Blood Sweat &#38; Tears</album>
+            <album albumType="mini">Love Yourself: Her</album>
+            <album albumType="single">MIC Drop/DNA/Crystal Snow</album>
+            <album albumType="full">Face Yourself</album>
+            <album albumType="full">Love Yourself: Tear</album>
+            <album albumType="repackage">Love Yourself: Answer</album>
+            <album albumType="single">FAKE LOVE/Airplane Pt. 2</album>
+            <album albumType="mini" xml:id="MOTS-Persona">Map of the Soul: Persona</album>
+            <album albumType="single">Lights/Boy With Luv</album>
+            <album albumType="full">Map of the Soul: 7</album>
+            <album albumType="single" xml:id="Dynamite">Dynamite</album>
+        </discography>
+        <fandomName>A.R.M.Y. (Adorable Representative MC for Youth)</fandomName>
+        <lightstick>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/lightsticks/BTS_Lightstick.jpg?raw=true</lightstick>
+        <currentRank>1</currentRank>
+    </about> 
+    
+    <memberList>
+        
+        <member xml:id="RM">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/BTS/RM_Portrait.jpg?raw=true</portrait>
+            <stageName>RM (아르엠), formerly Rap Monster (랩몬스터)</stageName>
+            <koreanName>Kim Nam Joon (김남준)</koreanName>
+            <role>
+                <position num="1" roleType="leader">Leader</position>
+                <position num="2" roleType="rapper">Main Rapper</position>
+            </role>
+            <height>181 cm (5’11”)</height>
+            <weight>74 kg (162 lbs)</weight>
+            <birthday when="1994-09-12">September 12, 1994</birthday>
+        </member>
+        
+        <member xml:id="Jin">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/BTS/Jin_Portrait.jpg?raw=true</portrait>
+            <stageName>Jin (진)</stageName>
+            <koreanName>Kim Seok Jin (김석진)</koreanName>
+            <role>
+                <position num="1" roleType="vocalist">Sub Vocalist</position>
+                <position num="2" roleType="visual">Visual</position>
+            </role>
+            <height>179 cm (5’10.5″)</height>
+            <weight>63 kg (139 lbs)</weight>
+            <birthday when="1992-12-04">December 4, 1992</birthday>
+        </member>
+ 
+        <member xml:id="Suga">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/BTS/Suga_Portrait.jpg?raw=true</portrait>
+            <stageName>Suga (슈가)</stageName>
+            <koreanName>Min Yoon Gi (민윤기)</koreanName>
+            <role>
+                <position num="1" roleType="rapper">Lead Rapper</position>
+            </role>
+            <height>173.8 cm (5’8.5″)</height>
+            <weight>59 kg (130 lbs)</weight>
+            <birthday when="1993-03-09">March 9, 1993</birthday>
+        </member>
+        
+        <member xml:id="J-Hope">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/BTS/J-Hope_Portrait.jpg?raw=true</portrait>
+            <stageName>J-Hope (제이홉)</stageName>
+            <koreanName>Jung Ho Seok (정호석)</koreanName>
+            <role>
+                <position num="1" roleType="dancer">Main Dancer</position>
+                <position num="2" roleType="rapper">Sub Rapper</position>
+                <position num="3" roleType="vocalist">Sub Vocalist</position>
+            </role>
+            <height>177 cm (5’10”)</height>
+            <weight>65 kg (143 lbs)</weight>
+            <birthday when="1994-02-18">February 18, 1994</birthday>
+        </member>
+        
+        <member xml:id="Jimin">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/BTS/Jimin_Portrait.jpg?raw=true</portrait>
+            <stageName>Jimin (지민)</stageName>
+            <koreanName>Park Ji Min (박지민)</koreanName>
+            <role>
+                <position num="1" roleType="dancer">Main Dancer</position>
+                <position num="2" roleType="vocalist">Lead Vocalist</position>
+            </role>
+            <height>173.6 cm (5’8.3″)</height>
+            <weight>60 kg (132 lbs)</weight>
+            <birthday when="1995-10-13">October 13, 1995</birthday>
+        </member>
+        
+        <member xml:id="V">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/BTS/V_Portrait.jpg?raw=true</portrait>
+            <stageName>V (뷔)</stageName>
+            <koreanName>Kim Tae Hyung (김태형)</koreanName>
+            <role>
+                <position num="1" roleType="dancer">Main Dancer</position>
+                <position num="2" roleType="vocalist">Sub Vocalist</position>
+                <position num="3" roleType="visual">Visual</position>
+            </role>
+            <height>179 cm (5’10.5″)</height>
+            <weight>63 kg (139 lbs)</weight>
+            <birthday when="1995-12-30">December 30, 1995</birthday>
+        </member>
+        
+        <member xml:id="Jungkook">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/BTS/Jungkook_Portrait.jpg?raw=true</portrait>
+            <stageName>Jungkook (정국)</stageName>
+            <koreanName>Jeon Jung Kook (전정국)</koreanName>
+            <role>
+                <position num="1" roleType="vocalist">Main Vocalist</position>
+                <position num="2" roleType="dancer">Lead Dancer</position>
+                <position num="3" roleType="rapper">Sub Rapper</position>
+                <position num="4" roleType="center">Center</position>
+                <position num="5" roleType="maknae">Maknae</position>
+            </role>
+            <height>178 cm (5’10”)</height>
+            <weight>66 kg (145 lbs)</weight>
+            <birthday when="1997-09-01">September 1, 1997</birthday>
+        </member>
+    </memberList>
+</groupPage>

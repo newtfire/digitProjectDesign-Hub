@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="group_markup_Schema.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="../markedup_songs/xmlidChecker.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<groupPage>
+    <about>
+        <groupName artistRef="NCT-Dream">NCT Dream (엔씨티 Dream)</groupName>
+        <bgInfo>
+            <p>NCT is an abbreviation for Neo Culture Technology, which, to quote Genius, <quote quoteURL="https://genius.com/artists/Nct">"illuminates SM Entertainment’s new and 'evolutionary' approach to the Korean and worldwide music industry."</quote> <compMent labelRef="SMEnt">SM Entertainment</compMent>, NCT’s company and label, has stated the idea of the group is to be infinite, with constantly shifting subunits and arrangements, based in different cities around the world. </p>
+            
+            <p>Each member was hand-selected by their <compMent labelRef="SMEnt">company</compMent>. Before being a part of NCT, they were considered members of SM Rookies, a training program for young idols-to-be who are primed and prepared to become a part of a greater group.</p>
+            
+            <p>NCT Dream is the third subunit of <groupMent artistRef="NCT">NCT</groupMent>, based around the themes of youth and innocence. The members are among the youngest of all of NCT, with member <memberMent artistRef="Jisung">Jisung</memberMent> being the “maknae” or youngest out of the current 23-person lineup. Dream previously had a stated “graduation” system, where members would leave the group once they turn 20 (the adult age in Korea). <memberMent artistRef="MarkLee">Mark</memberMent> had graduated in December of 2018, though this and the whole graduation system has been revoked by SM Entertainment due to fan backlash.</p>
+        </bgInfo>
+        <company xml:id="SMEnt">SM Entertainment</company>
+        <debutDate when="2016-08-24">August 24, 2016</debutDate>
+        <debutSong>Chewing Gum</debutSong>
+        <discography>
+            <album albumType="single">Chewing Gum</album>
+            <album albumType="mini">The First</album>
+            <album albumType="mini">We Young</album>
+            <album albumType="single">Joy</album>
+            <album albumType="mini">We Go Up</album>
+            <album albumType="single">Candle Light</album>
+            <album albumType="single">Don’t Need Your Love</album>
+            <album albumType="single">Fireflies</album>
+            <album albumType="mini">We Boom</album>
+            <album albumType="mini" xml:id="Reload">Reload</album>
+        </discography>
+        <fandomName>NCTzen</fandomName>
+        <fandomColor>
+            <color colorHex="#caff00">Pearl Neo Champagne</color>
+        </fandomColor>
+        <lightstick>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/lightsticks/NCT_Lightstick.png?raw=true</lightstick>
+        <currentRank>11</currentRank>
+    </about> 
+    
+    <memberList>
+        
+        <member artistRef="MarkLee">
+        <!-- artistRef is used here instead of an xml:id, because it's referencing the xml:id established in the main NCT profile doc --> 
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/NCT/NCT127/Mark_Portrait.jpg?raw=true</portrait>
+            <stageName>Mark (마크)</stageName>
+            <koreanName>Lee Min Hyung (이민형)</koreanName>
+            <nkBirthName>Mark Lee</nkBirthName>
+            <role>
+                <position num="1" roleType="leader">Leader</position>
+                <position num="2" roleType="rapper">Main Rapper</position>
+                <position num="3" roleType="dancer">Main Dancer</position>
+                <position num="4" roleType="vocalist">Sub Vocalist</position>
+                <position num="5" roleType="face">Face of the Group</position>
+            </role>
+            <subunit>
+                <unit unitName="NCT-Dream">NCT Dream</unit>
+                <unit unitName="NCT127">NCT 127</unit>
+                <unit unitName="NCTU">NCT U</unit>
+            </subunit>
+            <height>174.5 cm (5’9″)</height>
+            <weight>60 kg (132 lbs)</weight>
+            <birthday when="1999-08-02">August 2, 1999</birthday>
+            <note>He previously "graduated" from Dream, but has since been re-added due to fandom backlash.</note>
+        </member>
+        
+        <member artistRef="Renjun">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/NCT/NCT_Dream/Renjun_Portrait.jpg?raw=true</portrait>
+            <stageName>Renjun (런쥔)</stageName>
+            <koreanName>Hwang In Joon (황인준)</koreanName>
+            <nkBirthName>Huang Renjun (黄仁俊)</nkBirthName>
+            <role>
+                <position num="1" roleType="vocalist">Main Vocalist</position>
+                <position num="2" roleType="dancer">Lead Dancer</position>
+            </role>
+            <subunit>
+                <unit unitName="NCT-Dream">NCT Dream</unit>
+                <unit unitName="NCTU">NCT U</unit>
+            </subunit>
+            <height>171 cm (5’7″)</height>
+            <weight>52 kg (115 lbs)</weight>
+            <birthday when="2000-03-23">March 23, 2000</birthday>
+        </member>
+        
+        <member artistRef="Jeno">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/NCT/NCT_Dream/Jeno_Portrait.jpg?raw=true</portrait>
+            <stageName>Jeno (제노)</stageName>
+            <koreanName>Lee Je No (이제노)</koreanName>
+            <role>
+                <position num="1" roleType="dancer">Lead Dancer</position>
+                <position num="2" roleType="rapper">Lead Rapper</position>
+                <position num="3" roleType="vocalist">Sub Vocalist</position>
+                <position num="4" roleType="visual">Visual</position>
+            </role>
+            <subunit>
+                <unit unitName="NCT-Dream">NCT Dream</unit>
+                <unit unitName="NCTU">NCT U</unit>
+            </subunit>
+            <height>176.8 cm (5’10″)</height>
+            <weight>59 kg (130 lbs)</weight>
+            <birthday when="2000-04-23">April 23, 2000</birthday>
+        </member>
+        
+        <member artistRef="Haechan">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/NCT127/Haechan_Portrait.jpg?raw=true</portrait>
+            <stageName>Haechan (해찬)</stageName>
+            <koreanName>Lee Dong Hyuck (이동혁)</koreanName>
+            <role>
+                <position num="1" roleType="vocalist">Main Vocalist</position>
+            </role>
+            <subunit>
+                <unit unitName="NCT-Dream">NCT Dream</unit>
+                <unit unitName="NCT127">NCT 127</unit>
+                <unit unitName="NCTU">NCT U</unit>
+            </subunit>
+            <height>173 cm (5’8″)</height>
+            <weight>58 kg (128 lbs)</weight>
+            <birthday when="2000-05-06">June 6, 2000</birthday>
+        </member>
+        
+        <member artistRef="Jaemin">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/NCT/NCT_Dream/Jaemin_Portrait.jpg?raw=true</portrait>
+            <stageName>Jaemin (재민)</stageName>
+            <koreanName>Na Jae Min (나재민)</koreanName>
+            <role>
+                <position num="1" roleType="dancer">Lead Dancer</position>
+                <position num="2" roleType="rapper">Sub Rapper</position>
+                <position num="3" roleType="vocalist">Sub Vocalist</position>
+                <position num="4" roleType="visual">Visual</position>
+            </role>
+            <subunit>
+                <unit unitName="NCT-Dream">NCT Dream</unit>
+                <unit unitName="NCTU">NCT U</unit>
+            </subunit>
+            <height>177 cm (5’10″)</height>
+            <weight>58 kg (128 lbs)</weight>
+            <birthday when="2000-08-13">August 13, 2000</birthday>
+        </member>
+        
+        <member artistRef="Chenle">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/NCT/NCT_Dream/Chenle_Portrait.jpg?raw=true</portrait>
+            <stageName>Chenle (천러)</stageName>
+            <koreanName>Jong Jin Rak (종진락)</koreanName>
+            <nkBirthName>Zhong Chenle (钟辰乐 / 鍾辰樂)</nkBirthName>
+            <role>
+                <position num="1" roleType="vocalist">Main Vocalist</position>
+            </role>
+            <subunit>
+                <unit unitName="NCT-Dream">NCT Dream</unit>
+                <unit unitName="NCTU">NCT U</unit>
+            </subunit>
+            <height>176 cm (5’9″)</height>
+            <weight>58 kg (128 lbs)</weight>
+            <birthday when="2001-11-22">November 22, 2001</birthday>
+        </member>
+        
+        <member artistRef="Jisung">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/NCT/NCT_Dream/Jisung_Portrait.jpg?raw=true</portrait>
+            <stageName>Jisung (지성)</stageName>
+            <koreanName>Park Ji Sung (박지성)</koreanName>
+            <role>
+                <position num="1" roleType="dancer">Main Dancer</position>
+                <position num="2" roleType="rapper">Sub Rapper</position>
+                <position num="3" roleType="vocalist">Sub Vocalist</position>
+                <position num="4" roleType="maknae">Maknae</position>
+            </role>
+            <subunit>
+                <unit unitName="NCT-Dream">NCT Dream</unit>
+                <unit unitName="NCTU">NCT U</unit>
+            </subunit>
+            <height>180 cm (5’11″)</height>
+            <weight>62 kg (134 lbs)</weight>
+            <birthday when="2002-02-05">February 5, 2002</birthday>
+        </member>
+    </memberList>
+</groupPage>

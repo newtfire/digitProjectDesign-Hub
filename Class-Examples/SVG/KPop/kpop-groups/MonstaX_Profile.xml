@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="group_markup_Schema.rnc" type="application/relax-ng-compact-syntax"?>
+<groupPage>
+    <about>
+        <groupName xml:id="MonstaX">Monsta X (몬스타엑스)</groupName>
+        <bgInfo>
+            <p>MONSTA X (몬스타엑스) is a 6-member boy group from <compMent labelRef="Starship">Starship
+                    Entertainment</compMent></p>
+            <p>They debuted as 7 members, with member Wonho who left on October 2019. </p>
+        </bgInfo>
+        <company xml:id="StarshipEnt">Starship Entertainment</company>
+        <debutDate when="2015-05-14">May 14, 2015</debutDate>
+        <debutSong>Trespass</debutSong>
+        <discography>
+            <album albumType="extended">Trespass</album>
+            <album albumType="extended">Rush</album>
+            <album albumType="extended">The Clan Pt.1 Lost</album>
+            <album albumType="extended">The Clan Pt. 2 Guilty</album>
+            <album albumType="full">The Clan Pt. 2.5: The Final Chapter</album>
+            <album albumType="repackage">Shine Forever</album>
+            <album albumType="single">Newton</album>
+            <album albumType="extended">The Code</album>
+            <album albumType="extended">The Connect: Dejavu</album>
+            <album albumType="full">Piece</album>
+            <album albumType="full">Take.1 Are You There?</album>
+            <album albumType="full">Take.2 We Are Here</album>
+            <album albumType="single">Breathe For You</album>
+            <album albumType="full">Phenomenon</album>
+            <album albumType="single">Love U</album>
+            <album albumType="single">Someone’s Someone</album>
+            <album albumType="extended">Follow – Find You</album>
+            <album albumType="single">Magnetic</album>
+            <album albumType="full">All About Luv</album>
+            <album albumType="single">Wish On The Same Sky</album>
+            <album albumType="extended">Fantasia X</album>
+            <album albumType="full" xml:id="Fatal-Love">Fatal Love</album>
+        </discography>
+        <fandomName>Monbebe</fandomName>
+        <fandomColor>
+            <color colorHex="#329AA6">Lost</color>
+            <color colorHex="#A6038B">Guilty</color>
+            <color colorHex="#00249C">Beautiful</color>
+        </fandomColor>
+        <lightstick>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/lightsticks/Monsta_X_Lightstick.jpg?raw=true</lightstick>
+        <currentRank>28</currentRank>
+    </about>
+
+    <memberList>
+
+        <member xml:id="Shownu">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Monsta_X/Shownu_Portrait.jpg?raw=true</portrait>
+            <stageName>Shownu (셔누)</stageName>
+            <koreanName>Sohn Hyun Woo (손현우)</koreanName>
+            <role>
+                <position num="1" roleType="leader">Leader</position>
+                <position num="2" roleType="dancer">Main Dancer</position>
+                <position num="3" roleType="vocalist">Lead Vocalist</position>
+            </role>
+            <height>181 cm (5’11”)</height>
+            <weight>77 kg (169 lbs)</weight>
+            <birthday when="1992-06-18">June 18, 1992</birthday>
+        </member>
+
+        <member xml:id="Minhyuk">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Monsta_X/Minhyuk_Portrait.jpg?raw=true</portrait>
+            <stageName>Minhyuk (민혁)</stageName>
+            <koreanName>Lee Min Hyuk (이민혁)</koreanName>
+            <role>
+                <position num="1" roleType="vocalist">Sub Vocalist</position>
+                <position num="2" roleType="visual">Visual</position>
+            </role>
+            <height>180 cm (5’11”)</height>
+            <weight>65 kg (143 lbs)</weight>
+            <birthday when="1993-11-03">November 3, 1993</birthday>
+        </member>
+
+        <member xml:id="Kihyun">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Monsta_X/Kihyun_Portrait.jpg?raw=true</portrait>
+            <stageName>Kihyun (기현)</stageName>
+            <koreanName>Yoo Ki Hyun (유기현)</koreanName>
+            <role>
+                <position num="1" roleType="vocalist">Main Vocalist</position>
+            </role>
+            <height>174.8 cm (5’9″)</height>
+            <weight>62 kg (137 lbs)</weight>
+            <birthday when="1993-11-22">November 22, 1993</birthday>
+        </member>
+
+        <member xml:id="Hyungwon">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Monsta_X/Hyungwon_Portrait.jpg?raw=true</portrait>
+            <stageName>Hyungwon (형원)</stageName>
+            <koreanName>Chae Hyung Won (채형원)</koreanName>
+            <role>
+                <position num="1" roleType="dancer">Lead Dancer</position>
+                <position num="2" roleType="vocalist">Sub Vocalist</position>
+                <position num="3" roleType="rapper">Sub Rapper</position>
+                <position num="4" roleType="visual">Visual</position>
+                <position num="5" roleType="center">Center</position>
+            </role>
+            <height>182 cm (6’0″)</height>
+            <weight>60 kg (132 lbs)</weight>
+            <birthday when="1994-01-15">January 15, 1994</birthday>
+        </member>
+
+
+
+        <member xml:id="Joohoney">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Monsta_X/Joohoney_Portrait.jpg?raw=true</portrait>
+            <stageName>Joohoney</stageName>
+            <koreanName>Lee Ho Joon (이호준), but he changed his name to Lee Joo Heon (이주헌)</koreanName>
+            <role>
+                <position num="1" roleType="rapper">Main Rapper</position>
+                <position num="2" roleType="vocalist">Sub Vocalist</position>
+            </role>
+            <height>177 cm (5’10″)</height>
+            <weight>67 kg (148 lbs)</weight>
+            <birthday when="1994-10-06">October 6, 1994</birthday>
+        </member>
+
+        <member xml:id="IM">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Monsta_X/IM_Portrait.jpg?raw=true</portrait>
+            <stageName>I.M (아이엠)</stageName>
+            <koreanName>Im Chang Kyun (임창균)</koreanName>
+            <role>
+                <position num="1" roleType="rapper">Lead Rapper</position>
+                <position num="2" roleType="vocalist">Sub Vocalist</position>
+                <position num="3" roleType="maknae">Maknae</position>         
+            </role>
+            <height>175 cm (5’9″)</height>
+            <weight>63 kg (139 lbs)</weight>
+            <birthday when="1996-01-26">January 26, 1996</birthday>
+        </member>
+    </memberList>
+    
+    <formerMemberList>
+        <formerMember xml:id="Wonho">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Monsta_X/Wonho_Portrait.jpg?raw=true</portrait>
+            <stageName> Wonho (원호)</stageName>
+            <koreanName>Lee Ho Seok (이호석)</koreanName>
+            <role>
+                <position num="1" roleType="dancer">Lead Dancer</position>
+                <position num="2" roleType="vocalist">Lead Vocalist</position>
+                <position num="3" roleType="visual">Visual</position>
+            </role>
+            <height>178 cm (5’10”)</height>
+            <weight>78 kg (168 lbs)</weight>
+            <birthday when="1993-03-01">March 1, 1993</birthday>
+        </formerMember>
+    </formerMemberList>
+</groupPage>

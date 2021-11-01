@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="group_markup_Schema.rnc" type="application/relax-ng-compact-syntax"?>
+<groupPage>
+    <about>
+        <groupName xml:id="GOT7">GOT7 (갓세븐)</groupName>
+        <bgInfo>
+            <p>GOT7 is a 7-member boy group, formed by <compMent labelRef="JYPEnt">JYP
+                    Entertainment</compMent></p>
+            <p>They’re well-known for being a self-producing group, meaning many of the members
+                themselves write, compose, and produce much of the music and even design the
+                choreography to go with the songs. </p>
+            <p>Debuted in January 2014 with the single Girls Girls Girls featuring some female JYPE
+                trainees, including Nayeon and Jeongyeon who would debut with Twice.</p>
+        </bgInfo>
+
+        <company xml:id="JYPEnt">JYP Entertainment</company>
+        <debutDate when="2014-01-16">January 16, 2014</debutDate>
+        <debutSong>Girls Girls Girls</debutSong>
+        <discography>
+            <album albumType="mini">Got it?</album>
+            <album albumType="mini">Got love</album>
+            <album albumType="single">Around the World</album>
+            <album albumType="full">Identify</album>
+            <album albumType="single">Love Train</album>
+            <album albumType="mini">Just Right</album>
+            <album albumType="single">Laugh Laugh Laugh</album>
+            <album albumType="mini">MAD</album>
+            <album albumType="single">Just Right</album>
+            <album albumType="repackage">MAD Winder Edition</album>
+            <album albumType="full">Moriagatteyo</album>
+            <album albumType="mini">Flight Log: Departure</album>
+            <album albumType="single">Home Run</album>
+            <album albumType="full">Flight Log: Turbulence</album>
+            <album albumType="mini">Hey Yah</album>
+            <album albumType="single">Let Me</album>
+            <album albumType="mini">Flight Log: Arrival</album>
+            <album albumType="single">My Swagger</album>
+            <album albumType="mini">7 for 7</album>
+            <album albumType="single">Face</album>
+            <album albumType="mini">Turn Up</album>
+            <album albumType="single">One And Only You</album>
+            <album albumType="mini">Eyes On You</album>
+            <album albumType="single">The New Era</album>
+            <album albumType="full">Present: You</album>
+            <album albumType="repackage">Present: You &amp; Me Edition</album>
+            <album albumType="mini">I Won’t Let You Go</album>
+            <album albumType="mini">Spinning Top: Between Security and Insecurity</album>
+            <album albumType="full">Love Loop</album>
+            <album albumType="single">Sing for U</album>
+            <album albumType="mini">Call My Name</album>
+            <album albumType="repackage">Love Loop ~Sing for U Special Edition~</album>
+            <album albumType="mini">DYE</album>
+
+        </discography>
+        <fandomName>I GOT7 (Ahgase)</fandomName>
+        <fandomColor>
+            <color colorHex="#96D966">Green</color>
+            <color colorHex="#F2F2F2">White</color>
+        </fandomColor>
+        <lightstick>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/lightsticks/GOT7_Lightstick.jpg?raw=true</lightstick>
+        <currentRank>30</currentRank>
+    </about>
+
+    <memberList>
+        <member xml:id="JB">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/GOT7/JB_Portrait.jpg?raw=true</portrait>
+            <stageName>JB (제이비)</stageName>
+            <koreanName>Im Jae Beom (임재범)</koreanName>
+            <role>
+                <position num="1" roleType="leader">Leader</position>
+                <position num="2" roleType="vocalist">Main Vocalist</position>
+                <position num="3" roleType="dancer">Lead Dancer</position>
+                <position num="4" roleType="center">Center</position>
+            </role>
+            <height>179 cm (5’10” 1/2)</height>
+            <weight>66 kg (146 lbs)</weight>
+            <birthday when="1994-01-06">January 6, 1994</birthday>
+        </member>
+
+        <member xml:id="MarkTuan">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/GOT7/Mark_Portrait.jpg?raw=true</portrait>
+            <stageName>Mark (마크)</stageName>
+            <koreanName>Dong Yi Eun (동의은)</koreanName>
+            <nkBirthName>Mark Yi En Tuan (段宜恩)</nkBirthName>
+            <role>
+                <position num="1" roleType="rapper">Lead Rapper</position>
+                <position num="2" roleType="vocalist">Sub Vocalist</position>
+                <position num="3" roleType="visual">Visual</position>
+            </role>
+            <height>175 cm (5’9″)</height>
+            <weight>60 kg (132 lbs)</weight>
+            <birthday when="1993-09-04">September 4, 1993</birthday>
+        </member>
+
+        <member xml:id="Jackson">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/GOT7/Jackson_Portrait.jpg?raw=true</portrait>
+            <stageName>Jackson (잭슨)</stageName>
+            <koreanName>Jackson Wang</koreanName>
+            <nkBirthName>Wang Jia Er / Wang Ka Yee (王嘉爾)</nkBirthName>
+            <role>
+                <position num="1" roleType="rapper">Main Rapper</position>
+                <position num="2" roleType="dancer">Lead Dancer</position>
+                <position num="3" roleType="vocalist">Sub Vocalist</position>
+                <position num="4" roleType="face">Face of The Group</position>
+            </role>
+            <height>175 cm (5’9″)</height>
+            <weight>60.5 kg (133 lbs)</weight>
+            <birthday when="1994-03-28">March 28, 1994</birthday>
+        </member>
+
+        <member xml:id="Jinyoung">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/GOT7/.Jinyoung_Portrait.jpg?raw=true</portrait>
+            <stageName>Jinyoung (진영), formerly Jr./Junior</stageName>
+            <koreanName>Park Jin Young (박진영)</koreanName>
+            <role>
+                <position num="1" roleType="rapper">Sub Rapper</position>
+                <position num="2" roleType="vocalist">Sub Vocalist</position>
+                <position num="3" roleType="visual">Visual</position>
+                <position num="4" roleType="center">Center</position>
+                <position num="5" roleType="face">Face of The Group</position>
+            </role>
+            <height>178 cm (5’10”)</height>
+            <weight>63 kg (139 lbs)</weight>
+            <birthday when="1994-09-22">September 22, 1994</birthday>
+        </member>
+
+        <member xml:id="Youngjae">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/GOT7/Youngjae_Portrait.jpg?raw=true</portrait>
+            <stageName>Youngjae (영재)</stageName>
+            <koreanName>Choi Young Jae (최영재)</koreanName>
+            <role>
+                <position num="1" roleType="vocalist">Main Vocalist</position>
+            </role>
+            <height>177 cm (5’10”)</height>
+            <weight>65 kg (143 lbs)</weight>
+            <birthday when="1996-09-17">September 17, 1996</birthday>
+        </member>
+
+
+        <member xml:id="BamBam">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/GOT7/BamBam_Portrait.jpg?raw=true</portrait>
+            <stageName>BamBam (뱀뱀)</stageName>
+            <nkBirthName>Kunpimook Bhuwakul Bambam (กันต์พิมุกต์ ภูวกุล)</nkBirthName>
+            <role>
+                <position num="1" roleType="rapper">Sub Rapper</position>
+                <position num="2" roleType="vocalist">Sub Vocalist</position>
+            </role>
+            <height>178 cm (5’10″)</height>
+            <weight>60 kg (132 lbs)</weight>
+            <birthday when="1997-05-02">May 2, 1997</birthday>
+        </member>
+
+        <member xml:id="Yugyeom">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/GOT7/Yugyeom_Portrait.jpg?raw=true</portrait>
+            <stageName>Yugyeom (유겸)</stageName>
+            <koreanName>Kim Yu Gyeom (김유겸)</koreanName>
+            <role>
+                <position num="1" roleType="dancer">Main Dancer</position>
+                <position num="2" roleType="vocalist">Sub Vocalist</position>
+                <position num="3" roleType="rapper">Sub Rapper</position>
+                <position num="4" roleType="maknae">Maknae</position>
+            </role>
+            <height>183 cm (6’0″)</height>
+            <weight>68 kg (149 lbs)</weight>
+            <birthday when="1997-11-17">November 17, 1997</birthday>
+        </member>
+    </memberList>
+</groupPage>

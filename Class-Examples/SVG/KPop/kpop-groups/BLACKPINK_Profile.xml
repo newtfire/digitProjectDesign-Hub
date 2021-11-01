@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="group_markup_Schema.rnc" type="application/relax-ng-compact-syntax"?>
+<groupPage>
+    <about>
+        <groupName xml:id="BLACKPINK">BLACKPINK (블랙핑크)</groupName>
+        <bgInfo>
+            <p>BLACKPINK is a 4-member group under <compMent labelRef="YGEnt">YG Entertainment</compMent>. They debuted in 2016 with their debut single album <albumMent albumRef="Square-One">Square One</albumMent>, which contains the tracks Boombayah and Whistle, both considered their “debut songs.” The tracks charted number 1 and 2 respectively on Billboard’s World Digital Songs chart.</p>
+            
+            <p>The group has a dual-theme, similar to another well-known group Red Velvet, using the colors black and pink to contrast different ideas and themes. To quote an article from the K-Pop news site Soompi, <quote quoteURL="https://www.soompi.com/article/871551wpp/yg-reveals-new-girl-group-name-group-photos">“The meaning of Black Pink aims to contradict the common perception of the color pink. Pink is commonly used to portray prettiness, but Black Pink actually means to say that ‘Pretty isn’t everything.’ It also symbolizes that they are a team that encompasses not only beauty, but also great talent.”</quote></p>
+        </bgInfo>
+        <company xml:id="YGEnt">YG Entertainment</company>
+        <debutDate when="2016-08-08">August 8, 2016</debutDate>
+        <debutSong>Boombayah and Whistle</debutSong>
+        <discography>
+            <album albumType="single" xml:id="Square-One">Square One</album>
+            <album albumType="single">Square Two</album>
+            <album albumType="single">As If It’s Your Last</album>
+            <album albumType="mini">Blackpink</album>
+            <album albumType="repackage">Re:Blackpink</album>
+            <album albumType="mini" xml:id="Square-Up">Square Up</album>
+            <album albumType="mini">BLACKPINK In Your Area</album>
+            <album albumType="mini">Kill This Love</album>
+            <album albumType="single">How You Like That</album>
+            <album albumType="single">Ice Cream (with Selena Gomez)</album>
+            <album albumType="full">The Album</album>
+        </discography>
+        <fandomName>BLINK</fandomName>
+        <lightstick>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/lightsticks/Blackpink_Lightstick.jpg?raw=true</lightstick>
+        <currentRank>2</currentRank>
+    </about> 
+    
+    <memberList>
+        
+        <member xml:id="Jisoo">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Blackpink/Jisoo_Portrait.jpg?raw=true</portrait>
+            <stageName>Jisoo (지수)</stageName>
+            <koreanName>Kim Ji Soo (김지수)</koreanName>
+            <role>
+                <position num="1" roleType="vocalist">Lead Vocalist</position>
+                <position num="2" roleType="visual">Visual</position>
+            </role>
+            <height>162 cm (5 ft 3¾ in)</height>
+            <weight>45 kg (99 lbs)</weight>
+            <birthday when="1995-01-03">January 3, 1995</birthday>
+        </member>
+        
+        <member xml:id="Jennie">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Blackpink/Jennie_Portrait.jpg?raw=true</portrait>
+            <stageName>Jennie (제니)</stageName>
+            <koreanName>Kim Jennie (김제니)</koreanName>
+            <role>
+                <position num="1" roleType="rapper">Main Rapper</position>
+                <position num="2" roleType="vocalist">Lead Vocalist</position>
+            </role>
+            <height>163 cm (5’4″)</height>
+            <weight>50 kg (110 lbs)</weight>
+            <birthday when="1996-01-16">January 16, 1996</birthday>
+        </member>
+        
+        <member xml:id="Rose">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Blackpink/Rose_Portrait.jpg?raw=true</portrait>
+            <stageName>Rosé (로제)</stageName>
+            <koreanName>Park Chae Young (박채영)</koreanName>
+            <nkBirthName>Roseanne Park</nkBirthName>
+            <role>
+                <position num="1" roleType="vocalist">Main Vocalist</position>
+                <position num="2" roleType="dancer">Lead Dancer</position>
+            </role>
+            <height>168 cm (5’6”)</height>
+            <weight>46 kg (101 lbs)</weight>
+            <birthday when="1997-02-11">February 11, 1997</birthday>
+        </member>
+        
+        <member xml:id="Lisa">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Blackpink/Lisa_Portrait.jpg?raw=true</portrait>
+            <stageName>Lisa (리사)</stageName>
+            <nkBirthName>Lalisa Manoban (ลลิสา มโนบาล) / Pranpriya Manoban (ปราณปริยา มโนบาล)</nkBirthName>
+            <role>
+                <position num="1" roleType="dancer">Main Dancer</position>
+                <position num="2" roleType="rapper">Lead Rapper</position>
+                <position num="3" roleType="vocalist">Sub Vocalist</position>
+                <position num="4" roleType="maknae">Maknae</position>
+            </role>
+            <height>166.5 cm (5’5.6″)</height>
+            <weight>44.7 kg (98.5 lbs)</weight>
+            <birthday when="1997-03-27">March 27, 1997</birthday>
+        </member>
+        
+    </memberList>
+</groupPage>

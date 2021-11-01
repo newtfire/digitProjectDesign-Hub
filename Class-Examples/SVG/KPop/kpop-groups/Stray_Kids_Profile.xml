@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="group_markup_Schema.rnc" type="application/relax-ng-compact-syntax"?>
+<groupPage>
+    <about>
+        <groupName xml:id="StrayKids">Stray Kids (스트레이 키즈)</groupName>
+        <bgInfo>
+            <p>Stray Kids is an 8-member group under <compMent labelRef="JYPEnt">JYP Entertainment</compMent> and were formed through a survival-type competition show of the same name. <memberMent artistRef="Felix">Felix</memberMent> and <memberMent artistRef="LeeKnow">Lee Know</memberMent> were almost voted off, but were given a second chance and rejoined the group by the finale. Member Woojin left the group in October of 2019.</p>
+            
+            <p>The group officially debuted with their mini album <albumMent albumRef="I-Am-NOT">I am NOT</albumMent>, though they had released the single <albumMent albumRef="Hellevator">Hellavtor</albumMent>, the music video for which had been dropped prior to the show’s airing, and the album <albumMent albumRef="Mixtape">Mixtape</albumMent> before debut.</p>
+            
+            <p>There are three subunits that focus on different aspects of their music and performance: rapping (<groupMent artistRef="ThreeRACHA">3RACHA</groupMent>), dancing (<groupMent artistRef="DanceRacha">Dance Racha</groupMent>), and singing (<groupMent artistRef="VocalRacha">Vocal Racha</groupMent>). <groupMent artistRef="ThreeRACHA">3RACHA</groupMent> (whose naming scheme obviously influenced the other two units) was the first subunit formed and is responsible for the writing, composing, and producing for most of Stray Kids’ music</p>
+        </bgInfo>
+        <company xml:id="JYPEnt">JYP Entertainment</company>
+        <debutDate when="2018-03-25">March 25, 2018</debutDate>
+        <debutSong>District 9</debutSong>
+        <discography>
+            <album albumType="single" xml:id="Hellevator">Hellevator</album>
+            <album albumType="mini" xml:id="Mixtape">Mixtape</album>
+            <album albumType="mini" xml:id="I-Am-NOT">I Am NOT</album>
+            <album albumType="mini">I Am WHO?</album>
+            <album albumType="mini">I Am YOU</album>
+            <album albumType="mini">Clé 1: Miroh</album>
+            <album albumType="mini">Clé 2: Yellow Wood</album>
+            <album albumType="single">Double Knot</album>
+            <album albumType="mini">Clé: Levanter</album>
+            <album albumType="single">Mixtape: Gone Days</album>
+            <album albumType="single">Step Out of Cle</album>
+            <album albumType="repackage">SKZ2020</album>
+            <album albumType="single">Mixtape: On Track</album>
+            <album albumType="single">TOP</album>
+            <album albumType="full" xml:id="GOLive">GO生</album>
+            <album albumType="repackage" xml:id="INLife">IN生</album>
+        </discography>
+        <fandomName>Stay</fandomName>
+        <lightstick>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/lightsticks/Stray_Kids_Lightstick.png?raw=true</lightstick>
+        <currentRank>33</currentRank>
+    </about> 
+    
+    <memberList>
+        
+        <member xml:id="BangChan">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Stray_Kids/BangChan_Portrait.jpg?raw=true</portrait>
+            <stageName>Bang Chan (방찬)</stageName>
+            <koreanName>Bang Chan (방찬)</koreanName>
+            <nkBirthName>Christopher Bang</nkBirthName>
+            <role>
+                <position num="1" roleType="leader">Leader</position>
+                <position num="2" roleType="producer">Main Producer</position>
+                <position num="3" roleType="dancer">Lead Dancer</position>
+                <position num="4" roleType="vocalist">Lead Vocalist</position>
+                <position num="5" roleType="rapper">Sub Rapper</position>
+            </role>
+            <subunit>
+                <unit unitName="ThreeRACHA">3RACHA</unit>
+            </subunit>
+            <height>171 cm (5’7″)</height>
+            <birthday when="1997-10-03">October 3, 1997</birthday>
+        </member>
+        
+        <member xml:id="LeeKnow">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Stray_Kids/LeeKnow_Portrait.jpg?raw=true</portrait>
+            <stageName>Lee Know (리노)</stageName>
+            <koreanName>Lee Min Ho (이민호)</koreanName>
+            <role>
+                <position num="1" roleType="dancer">Main Dancer</position>
+                <position num="2" roleType="vocalist">Sub Vocalist</position>
+                <position num="3" roleType="rapper">Sub Rapper</position>
+            </role>
+            <subunit>
+                <unit unitName="DanceRacha">Dance Racha</unit>
+            </subunit>
+            <height>172 cm (5’8″)</height>
+            <birthday when="1998-10-25">October 25, 1998</birthday>
+        </member>
+        
+        <member xml:id="Changbin">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Stray_Kids/Changbin_Portrait.jpg?raw=true</portrait>
+            <stageName>Changbin (창빈)</stageName>
+            <koreanName>Seo Chang Bin (서창빈)</koreanName>
+            <role>
+                <position num="1" roleType="rapper">Main Rapper</position>
+                <position num="2" roleType="vocalist">Sub Vocalist</position>
+                <position num="3" roleType="producer">Producer</position>
+            </role>
+            <subunit>
+                <unit unitName="ThreeRACHA">3RACHA</unit>
+            </subunit>
+            <height>167 cm (5’6″)</height>
+            <birthday when="1999-08-11">August 11, 1999</birthday>
+        </member>
+        
+        <member xml:id="Hyunjin">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Stray_Kids/Hyunjin_Portrait.jpg?raw=true</portrait>
+            <stageName>Hyunjin (현진)</stageName>
+            <koreanName>Hwang Hyun Jin (황현진)</koreanName>
+            <role>
+                <position num="1" roleType="dancer">Main Dancer</position>
+                <position num="2" roleType="rapper">Lead Rapper</position>
+                <position num="3" roleType="vocalist">Sub Vocalist</position>
+                <position num="4" roleType="visual">Visual</position>
+            </role>
+            <subunit>
+                <unit unitName="DanceRacha">Dance Racha</unit>
+            </subunit>
+            <height>179 cm (5’10.5″)</height>
+            <birthday when="2000-03-15">March 20, 2000</birthday>
+        </member>
+        
+        <member xml:id="Han">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Stray_Kids/Han_Portrait.jpg?raw=true</portrait>
+            <stageName>Han (한)</stageName>
+            <koreanName>Han Ji Sung (한지성)</koreanName>
+            <role>
+                <position num="1" roleType="rapper">Main Rapper</position>
+                <position num="2" roleType="vocalist">Lead Vocalist</position>
+                <position num="3" roleType="producer">Producer</position>
+            </role>
+            <subunit>
+                <unit unitName="ThreeRACHA">3RACHA</unit>
+            </subunit>
+            <height>169 cm (5’7″)</height>
+            <birthday when="2000-09-14">September 14, 2000</birthday>
+        </member>
+        
+        <member xml:id="Felix">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Stray_Kids/Felix_Portrait.jpg?raw=true</portrait>
+            <stageName>Felix (필릭스)</stageName>
+            <koreanName>Lee Yong Bok (이용복)</koreanName>
+            <nkBirthName>Felix Lee</nkBirthName>
+            <role>
+                <position num="1" roleType="dancer">Lead Dancer</position>
+                <position num="2" roleType="rapper">Lead Rapper</position>
+                <position num="3" roleType="vocalist">Sub Vocalist</position>
+            </role>
+            <subunit>
+                <unit unitName="DanceRacha">Dance Racha</unit>
+            </subunit>
+            <height>171 cm (5’7″)</height>
+            <birthday when="2000-09-15">September 15, 2000</birthday>
+        </member>
+        
+        <member xml:id="Seungmin">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Stray_Kids/Seungmin_Portrait.jpg?raw=true</portrait>
+            <stageName>Seungmin (승민)</stageName>
+            <koreanName>Kim Seung Min (김승민)</koreanName>
+            <role>
+                <position num="1" roleType="vocalist">Main Vocalist</position>
+            </role>
+            <subunit>
+                <unit unitName="VocalRacha">Vocal Racha</unit>
+            </subunit>
+            <height>178 cm (5’10″)</height>
+            <birthday when="2000-09-22">September 22, 2000</birthday>
+        </member>
+        
+        <member xml:id="IN">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Stray_Kids/IN_Portrait.jpg?raw=true</portrait>
+            <stageName>I.N (아이엔)</stageName>
+            <koreanName>Yang Jeong In (양정인)</koreanName>
+            <role>
+                <position num="1" roleType="vocalist">Lead Vocalist</position>
+                <position num="2" roleType="maknae">Maknae</position>
+            </role>
+            <subunit>
+                <unit unitName="VocalRacha">Vocal Racha</unit>
+            </subunit>
+            <height>172 cm (5’8″)</height>
+            <birthday when="2001-02-08">February 8, 2001</birthday>
+        </member>   
+    </memberList>
+    
+    <formerMemberList>
+        <formerMember xml:id="Woojin">
+            <portrait>https://github.com/PiperBaron/KPopRepo/blob/master/website/images/member_portraits/Stray_Kids/Woojin_Portrait.jpg?raw=true</portrait>
+            <stageName>Woojin (우진)</stageName>
+            <koreanName>Kim Woo Jin (김우진)</koreanName>
+            <role>
+                <position num="1" roleType="vocalist">Main Vocalist</position>
+            </role>
+            <subunit>
+                <unit unitName="VocalRacha">Formerly in Vocal Racha</unit>
+            </subunit>
+            <height>176 cm (5’9″)</height>
+            <birthday when="1997-04-08">April 8, 1997</birthday>
+        </formerMember>
+    </formerMemberList>
+    
+    <subunitList>
+        <groupSubunit xml:id="ThreeRACHA">
+            <subunitName unitName="ThreeRACHA">3RACHA</subunitName>
+            <subunitMembers subunitMemberName="BangChan">Bang Chan (방찬)</subunitMembers>
+            <subunitMembers subunitMemberName="Changbin">Changbin (창빈)</subunitMembers>
+            <subunitMembers subunitMemberName="Han">Han (한)</subunitMembers>
+        </groupSubunit>
+        
+        <groupSubunit xml:id="DanceRacha">
+            <subunitName unitName="DanceRacha">Dance Racha</subunitName>
+            <subunitMembers subunitMemberName="LeeKnow">Lee Know (리노)</subunitMembers>
+            <subunitMembers subunitMemberName="Hyunjin">Hyunjin (현진)</subunitMembers>
+            <subunitMembers subunitMemberName="Felix">Felix (필릭스}</subunitMembers>
+        </groupSubunit>
+        
+        <groupSubunit xml:id="VocalRacha">
+            <subunitName unitName="VocalRacha">Vocal Racha</subunitName>
+            <subunitMembers subunitMemberName="Seungmin">Seungmin (승민)</subunitMembers>
+            <subunitMembers subunitMemberName="IN">I.N (아이엔)</subunitMembers>
+            <subunitMembers subunitMemberName="Woojin">(Former Member) Woojin (우진)</subunitMembers>
+        </groupSubunit>
+        
+    </subunitList>
+</groupPage>

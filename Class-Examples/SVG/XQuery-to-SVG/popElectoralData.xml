@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<presidential_votes>
+    <election year="1900">
+        <candidate party="Republican" electoral_votes="292" popular_votes="7207923" popular_percentage="51.7">William McKinley</candidate>
+        <candidate party="Democrat" electoral_votes="155" popular_votes="6358133" popular_percentage="45.5">William Jennings Bryan</candidate>
+    </election>
+    <election year="1904">
+        <candidate party="Republican" electoral_votes="336" popular_votes="7623486" popular_percentage="56.4">Theodore Roosevelt</candidate>
+        <candidate party="Democrat" electoral_votes="140" popular_votes="5077911" popular_percentage="37.6">Alton B. Parker</candidate>
+        <candidate party="Socialist" electoral_votes="0" popular_votes="402489" popular_percentage="3.0">Eugene V. Debs</candidate>
+    </election>
+    <election year="1908">
+        <candidate party="Republican" electoral_votes="321" popular_votes="7678908" popular_percentage="51.6">William Howard Taft</candidate>
+        <candidate party="Democrat" electoral_votes="162" popular_votes="6409104" popular_percentage="43.0">William Jennings Bryan</candidate>
+        <candidate party="Socialist" electoral_votes="0" popular_votes="420380" popular_percentage="2.8">Eugene V. Debs</candidate>
+    </election>
+    <election year="1912">
+        <candidate party="Republican" electoral_votes="8" popular_votes="3483922" popular_percentage="23.2">William Howard Taft</candidate>
+        <candidate party="Democrat" electoral_votes="435" popular_votes="6293454" popular_percentage="41.8">Woodrow Wilson</candidate>
+        <candidate party="Progressive" electoral_votes="88" popular_votes="4119207" popular_percentage="27.4">Theodore Roosevelt</candidate>
+        <candidate party="Socialist" electoral_votes="0" popular_votes="900369" popular_percentage="6.0">Eugene V. Debs</candidate>
+    </election>
+</presidential_votes>

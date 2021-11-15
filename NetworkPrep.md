@@ -14,6 +14,7 @@ Source Node \tab Edge \tab Target Node \linefeed
 
 **Explanation:** 
 "Nodes" are features you're connecting. 
+
 "Edges" are connecting lines (sometimes also called "bridges") between nodes.
  (and the linefeed is a hard return character). 
 
@@ -38,11 +39,12 @@ declare variable $charfile := doc('/db/smashtiers/supersmashtierlist.xml');
 ```
 
 Then let's think about our network: 
-**Let's network characters with game numbers as their connectors, and show the tiers they're in:
-Source node: Character
-Edge connector: Game number
-Target node: Tier info
-**
+**Let's network characters with game numbers as their connectors, and show the tiers they're in:**
+
+* Source node: Character
+* Edge connector: Game number
+* Target node: Tier info
+
 
 This is a "bimodal" network: Characters connected to Tiers via the games they're in.
 

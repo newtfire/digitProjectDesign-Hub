@@ -7,9 +7,9 @@ color:black;
 section#overview {color:maroon; display: flex; justify-content:flex-start; flex-direction:row;}
 section#overview p {flex:1;}
 /* Here I'm creating a box to contain the image and I'll control its dimensions with flex. It is kind of a picture frame that can scale without distorting my image. */
-section#overview div#newt-size {flex:3;}
+section#overview div#newt-size {flex:2;}
 /* Now, I'm setting a specific size for the image sitting inside its special div box: */
-div#newt-size img {width:400px;}
+div#newt-size img {width:1000px;}
 
 /* The next CSS rules control my <section id="main"> and set up a list */
 section#main {display:flex; justify-content:flex-start; flex-direction:row;}

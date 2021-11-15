@@ -5,4 +5,28 @@ What's a network analysis? It's a way of studying how data about people/places/i
 For this intro orientation, we're working with code from the DIGIT 400 Smash Tiers project, to create a network analysis of information about Mario Brothers' characters, the games they appear in and the tiers they share. We'll be working with Cytoscape software to plot the graph. 
 
 ## Cytoscape 
-You can work with Cytoscape in the DIGIT computer lab classrooms (in Kochel 77, Witkowski 109, and in Lilley library). You can download and install it 
+You can work with Cytoscape in the DIGIT computer lab classrooms (in Kochel 77, Witkowski 109, and in Lilley library). You can [download and install it on your computer for free from Cytoscape](https://cytoscape.org/).
+
+## eXist-dB and prepping the data
+Cytoscape expects to see network data in a **tab-separated values** format, which is a special form of text that is importable into spreadsheets and lots of visualization software. Network data to be imported needs to follow the format of:
+
+Source Node \tab Edge \tab Target Node \linefeed
+
+**Explanation:** 
+"Nodes" are features you're connecting. 
+"Edges" are connecting lines (sometimes also called "bridges") between nodes.
+ (and the linefeed is a hard return character). 
+
+Often we output additional data, descriptors for nodes and edges, that we use to style our plot, so we may be outputting some extra values like this:
+
+Source Node \tab Node Edge \tab Edge-Data \tab Target Node \linefeed
+
+Edge data might be a numerical count of how many times a connection occurs, and we can import that information to add "weight" to thicken our connecting lines if we organize our data to process, say all the distinct values of characters, and then count the number of times they are connected to each other based on tiers.  
+
+We can output that text TSV format with XQuery as a plain text output file, saved with the extension **.tsv**
+We need to work with some special characters to give us tab separators:
+
+* tab character: `"&#x9;"` 
+* line-feed charcter: `"&#10;`
+
+

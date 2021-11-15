@@ -1,6 +1,6 @@
 # Network Analysis Exercise 1: Preparation
 
-What's a network analysis? It's a way of studying how data about people/places/items/characters (anything you're tracking) is related by shared properties or contexts. For example, on this page scroll to see [a network analysis plotted from blues lyrics data based on shared decades](https://am0eba-byte.github.io/blues/index.html)
+What's a network analysis? It's a way of studying how data about people/places/items/characters (anything you're tracking) is related by shared properties or contexts. For example, on this page scroll to see [a network analysis plotted from blues lyrics data based on shared decades](https://am0eba-byte.github.io/blues/index.html). This super speedy tutorial is an abbreviated version of [our older Network Analysis tutorial on newtfire](http://ebeshero.github.io/thalaba/cytosc.html), and [our original exercises in XQuery on the Decameron](https://newtfire.org/courses/tutorials/NetworkExercise1.html).
 
 For this intro orientation, we're working with code from the DIGIT 400 Smash Tiers project, to create a network analysis of information about Mario Brothers' characters, the games they appear in and the tiers they share. We'll be working with Cytoscape software to plot the graph. 
 

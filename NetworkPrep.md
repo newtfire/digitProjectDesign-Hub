@@ -29,4 +29,31 @@ We need to work with some special characters to give us tab separators:
 * tab character: `"&#x9;"` 
 * line-feed charcter: `"&#10;`
 
+## Addressing Smash Tiers data in eXist-dB
+First, inspect the data stored in our newtfire eXist-dB at `/db/smashtiers/supersmashtierlist.xml`
+
+We'll create an XQuery script to reach into the Smash Tiers data with this global variable:
+```
+declare variable $charfile := doc('/db/smashtiers/supersmashtierlist.xml');
+```
+
+Then let's think about our network: 
+**Let's network characters with game numbers as their connectors, and show the tiers they're in:
+Source node: Character
+Edge connector: Game number
+Target node: Tier info
+**
+
+This is a "bimodal" network: Characters connected to Tiers via the games they're in.
+
+We could switch this up:
+*  Characters connected to Game Numbers, with Tiers as the connector
+* Characters connected by Tiers only,
+* Characters connected to each other via Games, just by virtue of connection. 
+
+Notes continue in the newtfire eXist-dB at 
+` /db//2021-Dig400-Examples/NETWORK-SmashTiers.xql`
+
+
+
 

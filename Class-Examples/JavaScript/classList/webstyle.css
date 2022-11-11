@@ -290,10 +290,14 @@ div.flex {
 }
 /*  ebb: The contents of this div.flex will now display side by side */
 
-div.flex section#toc{flex: 3; padding: 1vw;
+div.flex section#toc{
+    flex: 3; 
+    padding: 1vw;
 
 }
-div.flex fieldset{flex: 1; padding: 1vw;
+div.flex fieldset{
+    flex: 1; 
+    padding: 1vw;
 
 }
 

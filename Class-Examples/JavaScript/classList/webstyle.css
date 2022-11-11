@@ -1,0 +1,299 @@
+
+body {
+background-color: BurlyWood;
+color: #231709;
+font-family: arial, helvetica, sans-serif;
+}
+
+a:link {
+    color: #821F3B;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #821F3B;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #821F3B;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+}
+
+* {
+    margin: 0;
+    padding: 0;  
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+}
+
+ul.locat{
+    overflow-wrap:break-word;
+    margin:auto;
+    text-align:justify;
+    padding: 15px;
+}
+
+ul.locat li{
+    padding:3px;
+}
+
+ul.menu {
+    
+}
+
+ul.menu li {
+    list-style: none;
+    display: inline-block;
+    float: left;
+    line-height: 50px;
+}
+
+ul.menu li a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Trebuchet MS", Times, serif;
+    color: indigo;
+    padding: 0 20px;
+}
+
+ul.menu li a:hover {
+    color: black;
+}
+
+h1.index {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*
+p.index {
+    text-align: justify;
+    font-size: 16px;
+    padding:20px;
+    overflow-wrap:break-word;
+    line-height:1.3;
+}
+
+p.index2 {
+    text-align: center;
+    margin-top: 280px;
+}*/
+
+p{
+    padding: 5px;
+}
+
+div.boxes{
+    display:flex;
+    width:fill;
+    height:auto;    
+    padding:20px;
+    gap:15px;    
+}
+
+div.boxes div{
+    padding:10px;
+    text-align:left;
+    background-color:rgba(255,255,255,0.4);    
+}
+
+div.boxes img{    
+    width:480px;
+    height:auto;
+}
+
+section#Letter1 figure { 
+    background-color: lavender; 
+    margin: 3em; 
+    width: 40%;
+}
+
+section#Letter2 figure { 
+    background-color: lavender; 
+    margin: 3em; 
+    width: 40%;
+}
+
+section#ParentLetter figure { 
+    background-color: lavender; 
+    margin: 3em; 
+    width: 40%;
+}
+
+section#Memorial figure { 
+    background-color: lavender; 
+    margin: 3em; 
+    width: 40%;
+}
+
+figcaption {
+    font-style: italic; 
+    font-size: .8em;
+}
+
+figure img {
+    max-width: 700px; 
+    width: 100%;
+}
+
+.letter {
+    margin: 1em;
+}
+
+
+.img {
+    width: 300px;
+    height: auto;
+    padding: 10px;
+}
+
+/* About Grid */
+
+.abt-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  padding: 30px;
+}
+
+.abt-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.abt-item1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.abt-img{
+    width:auto;
+    height:200px;
+}
+.abt-figcap{
+    padding:10px;
+    font-style:normal;    
+    font-weight:bold;    
+}
+
+.abt-desc{    
+    text-align:center;
+    font-size:14px;
+    overflow-wrap:break-word;    
+}
+
+h1.heading1T {
+   text-align: center;
+   margin-top: 30px;
+}
+
+h2.heading2T {
+    margin-left: 170px;
+    margin-top: 20px;
+}
+
+ul.ToC {
+   margin-left: 210px; 
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+section[class="document"] {
+ background-color:rgba(255, 255, 255, 0.4);
+ border: thin solid maroon;
+ display:grid;
+ grid-auto-flow:column; 
+/* grid-template-columns:800px 400px; */
+ grid-template-columns: 55% 45%; 
+/* grid-column-gap:20px;*/
+}
+
+section[class="document"] div.docImage {
+background-color:rgba(255, 255, 255, 0.4);
+display:grid;
+grid-auto-flow:column;
+/*grid-template-columns: 400px 400px /\*minmax(auto, 400px)*\/; */
+/*  ebb: need to look up how minmax works.  */
+ grid-template-columns: 55% 45%; 
+grid-column-gap:20px;
+}
+
+section#fulltext {
+    width:80%;
+    margin:auto;
+    display:grid;
+    grid-auto-flow:row;
+    grid-row-gap:50px;
+}
+
+div.docImage > figure > img {
+ object-fit:contain;
+ width:150%;
+ margin-left: 50px;
+ margin-top: 20px;
+   
+}
+
+div.docImage > figure > figcaption {
+ margin-left: 50px;
+ margin-bottom: 10px;
+ font-size: 16px;
+}
+
+.transcript>a>h2{
+    padding:10px;
+}
+
+/* ebb: I'm altering the default CSS here for demonstration */
+
+span.person.on {
+   background-color: white;
+   color:red;
+   }
+
+span.place.on  {
+    background-color:aqua;
+    
+}
+
+span.spelling.on {
+    border: red 1px solid;
+    color:red;
+}
+
+div.flex {
+    display: flex;
+    padding: 3vw;
+}
+/*  ebb: The contents of this div.flex will now display side by side */
+
+div.flex section#toc{flex: 3; padding: 1vw;
+
+}
+div.flex fieldset{flex: 1; padding: 1vw;
+
+}
+

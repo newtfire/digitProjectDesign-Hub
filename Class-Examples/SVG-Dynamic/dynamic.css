@@ -1,0 +1,29 @@
+/*svg:hover g[class] {
+  /\* transform:rotate(30deg)*\/
+  transform:scale(1);
+transform-origin:center;
+      
+}*/
+
+
+/* For transform:scale see https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale  */
+/*svg:hover text {
+transform:scale(5);
+transform-origin:center;
+
+}*/
+
+/*svg:hover #wrapper {
+    
+    transform:scale(1);
+
+}*/
+
+g:hover #C07  {
+      transform-origin:center;
+      transform:rotate(60deg);
+      /*transition: cubic-bezier(.9, .2, .9, .5);*/
+      transition:5s ease-out;
+    /* transform:scale(3);*/
+    
+}

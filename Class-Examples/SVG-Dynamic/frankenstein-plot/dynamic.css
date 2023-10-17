@@ -19,7 +19,7 @@ transform-origin:center;
 
 }*/
 
-g:hover #C07  {
+svg:hover #C07  {
       transform-origin:center;
       transform:rotate(60deg);
       /*transition: cubic-bezier(.9, .2, .9, .5);*/

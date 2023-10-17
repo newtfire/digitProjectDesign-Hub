@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="dynamic.css" ?>    
 <svg xmlns="http://www.w3.org/2000/svg"
      width="1500"
      height="1300"
      viewBox="0 0 3300 2600">
-   <link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="dynamic.css"/>
    <g id="wrapper" transform="translate(-200, 50)">
       <g id="C01"><!--Array of CU Maxes to Here: --><!--Sum of max values to here: 0-->
          <text x="470"
@@ -163,6 +163,7 @@
                   y2="125.30000000000001"
                   style="stroke:#FDB27A;stroke-width:20">
                <title>1818</title>
+               <animate attributeName="y2" fill="freeze" from="125" to="500" dur="10s" />
             </line>
             <text x="250"
                   y="68.40833333333333"

@@ -1,10 +1,11 @@
+/* Test Comment in CSS file* */
 /*svg:hover g[class] {
   /\* transform:rotate(30deg)*\/
   transform:scale(1);
 transform-origin:center;
       
 }*/
-
+/*This text is on its way to becoming a comment.*/
 
 /* For transform:scale see https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale  */
 /*svg:hover text {

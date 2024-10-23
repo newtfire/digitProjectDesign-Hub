@@ -4,6 +4,7 @@ function init() {
     var fieldset = document.getElementsByTagName('input');
     for (var i = 0; i < fieldset.length; i++) {
         fieldset[i].addEventListener('click', toggle, false);
+        fieldset[i].addEventListener('hover', toggle, false);
     }
 }
 
